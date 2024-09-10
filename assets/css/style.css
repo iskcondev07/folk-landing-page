@@ -15,9 +15,8 @@ body {
 }
 
 body {
-  /* background: linear-gradient(135deg, #1e0f61, #300053, #0a0a0a); */
+  background: linear-gradient(90deg, #171040, #121329, #10141a);
 }
-
 
 main {
   flex: 1;
@@ -48,30 +47,69 @@ main {
 .navbar {
   background-color: #2c2c2c;
 }
+
+.submit-form {
+  background: #f6d25a;
+  color: black;
+  border-radius: 10px;
+  padding: 6px 25px;
+  font-size: 15px;
+  font-weight: 700;
+  border: none;
+}
 /* form section  */
-.btn-add-elem{
-  background-color: #fcfcfc;
+.btn-add-elem {
+  background-color: #d6d6d6;
   font-weight: bold;
   padding: 5px 25px 5px 25px;
+  color: #10141a;
+  border: 1px solid #d6d6d6;
+  border-radius: 10px;
+}
+
+.btn-add-elem:hover {
+  background-color: transparent;
+  color: #171040;
+}
+
+.form-input {
+  border: solid #d6d6d6 1px;
+  color: #d6d6d6;
+  background-color: #3e3b47;
+  border-radius: 10px;
+}
+
+.form-input::placeholder {
+  color: #d6d6d6;
+}
+
+.form-group label {
+  font-weight: bold;
+}
+
+.form-section {
+  color: #d6d6d6;
+}
+
+.Prospect-form-heading {
+  line-height: 5rem;
+  color: #d6d6d6;
+}
+
+.form-section-heading {
+  line-height: 4rem;
 }
 /* footer section  */
 
 footer {
-  background-color: #ffffff;
+  background-color: #d6d6d6fff;
   width: 100%;
   text-align: center;
   position: relative;
   bottom: 0;
+  font-weight: bold;
 }
 
-p{
+p {
   margin-top: 1rem;
-}
-
-.Prospect-form-heading{
-  line-height: 5rem;
-}
-
-.form-section-heading{
-  line-height: 4rem;
 }

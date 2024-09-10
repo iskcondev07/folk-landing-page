@@ -73,323 +73,326 @@
     <!-- Landing Page Content -->
     <main>
         <section class="container mt-5">
-            <div class="text-center">
-                <h1 class="Prospect-form-heading">Prospect Form</h1>
-            </div>
-            <div class="form-section my-3">
-                <h3 class="form-section-heading">Personal Information</h3>
-                <div class="row">
-                    <div class="col-xl-3">
-                        <div class="form-group">
-                            <label for="fullName">Full Name</label>
-                            <input type="text" class="form-control form-input" id="fullName" ng-model="user.name"
-                                placeholder="Enter your full name" required>
+            <form name="prospectForm" novalidate>
+                <div class="text-center">
+                    <h1 class="Prospect-form-heading">Prospect Form</h1>
+                </div>
+                <div class="form-section my-3">
+                    <h3 class="form-section-heading">Personal Information</h3>
+                    <div class="row">
+                        <div class="col-xl-3">
+                            <div class="form-group">
+                                <label for="fullName">Full Name</label>
+                                <input type="text" class="form-control form-input" id="fullName" ng-model="user.name"
+                                    placeholder="Enter your full name" required>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-xl-3">
-                        <div class="form-group">
-                            <label for="email">Email ID</label>
-                            <input type="email" class="form-control form-input" id="email" ng-model="user.email"
-                                placeholder="Enter your email" required>
+                        <div class="col-xl-3">
+                            <div class="form-group">
+                                <label for="email">Email ID</label>
+                                <input type="email" class="form-control form-input" id="email" ng-model="user.email"
+                                    placeholder="Enter your email" required>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-xl-3">
-                        <div class="form-group">
-                            <label for="mobile">Mobile Number</label>
-                            <input type="tel" class="form-control form-input" id="mobile" ng-model="user.mobile"
-                                placeholder="Enter your mobile number" required pattern="[0-9]{10}">
+                        <div class="col-xl-3">
+                            <div class="form-group">
+                                <label for="mobile">Mobile Number</label>
+                                <input type="tel" class="form-control form-input" id="mobile" ng-model="user.mobile"
+                                    placeholder="Enter your mobile number" required pattern="[0-9]{10}">
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-xl-3">
-                        <div class="form-group">
-                            <label for="gender">Gender</label>
-                            <select class="form-control form-input" id="gender" ng-model="user.gender" required>
-                                <option value="">Select Gender</option>
-                                <option value="Male">Male</option>
-                                <option value="Female">Female</option>
-                                <option value="Other">Other</option>
-                            </select>
+                        <div class="col-xl-3">
+                            <div class="form-group">
+                                <label for="gender">Gender</label>
+                                <select class="form-control form-input" id="gender" ng-model="user.gender" required>
+                                    <option value="">Select Gender</option>
+                                    <option value="Male">Male</option>
+                                    <option value="Female">Female</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-xl-3">
-                        <div class="form-group">
-                            <label for="dob">Date of Birth</label>
-                            <input type="date" class="form-control form-input" id="dob" ng-model="user.dob" required>
+                        <div class="col-xl-3">
+                            <div class="form-group">
+                                <label for="dob">Date of Birth</label>
+                                <input type="date" class="form-control form-input" id="dob" ng-model="user.dob"
+                                    required>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-xl-3">
-                        <div class="form-group">
-                            <label for="language">Language</label>
-                            <input type="text" class="form-control form-input" id="language" ng-model="user.language"
-                                placeholder="Enter preferred language" required>
+                        <div class="col-xl-3">
+                            <div class="form-group">
+                                <label for="language">Language</label>
+                                <input type="text" class="form-control form-input" id="language"
+                                    ng-model="user.language" placeholder="Enter preferred language" required>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-xl-3">
-                        <div class="form-group">
-                            <label for="education">Education</label>
-                            <input type="text" class="form-control form-input" id="education" ng-model="user.education"
-                                placeholder="Enter your education" required>
+                        <div class="col-xl-3">
+                            <div class="form-group">
+                                <label for="education">Education</label>
+                                <input type="text" class="form-control form-input" id="education"
+                                    ng-model="user.education" placeholder="Enter your education" required>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-xl-3">
-                        <div class="form-group">
-                            <label for="yearOfPassOut">Year of Pass Out</label>
-                            <input type="number" class="form-control form-input" id="yearOfPassOut"
-                                ng-model="user.yearOfPassOut" placeholder="Enter year of pass out" required min="1900"
-                                max="2099">
+                        <div class="col-xl-3">
+                            <div class="form-group">
+                                <label for="yearOfPassOut">Year of Pass Out</label>
+                                <input type="number" class="form-control form-input" id="yearOfPassOut"
+                                    ng-model="user.yearOfPassOut" placeholder="Enter year of pass out" required
+                                    min="1900" max="2099">
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-xl-12">
-                        <div class="form-group">
-                            <label for="remarks">Remark</label>
-                            <textarea class="form-control" id="remarks" ng-model="user.remarks" rows="3"
-                                placeholder="Enter any remarks"></textarea>
+                        <div class="col-xl-12">
+                            <div class="form-group">
+                                <label for="remarks">Remark</label>
+                                <textarea class="form-control form-input" id="remarks" ng-model="user.remarks" rows="3"
+                                    placeholder="Enter any remarks"></textarea>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="form-section my-3">
-                <div class="d-flex justify-content-between align-items-center">
-                    <div>
-                        <h3 class="form-section-heading">Family Information</h3>
+                <div class="form-section my-3">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                            <h3 class="form-section-heading">Family Information</h3>
+                        </div>
+                        <div><button class="btn btn-add-elem btn-sm">Add</button></div>
                     </div>
-                    <div><a class="btn btn-add-elem btn-sm">Add</a></div>
-                </div>
 
-                <div class="row">
-                    <div class="col-xl-3">
-                        <div class="form-group">
-                            <label for="relationship">Relationship</label>
-                            <input type="text" class="form-control form-input" id="relationship"
-                                ng-model="family.relationship" placeholder="Enter relationship" required>
+                    <div class="row">
+                        <div class="col-xl-3">
+                            <div class="form-group">
+                                <label for="relationship">Relationship</label>
+                                <input type="text" class="form-control form-input" id="relationship"
+                                    ng-model="family.relationship" placeholder="Enter relationship" required>
+                            </div>
+                        </div>
+                        <div class="col-xl-3">
+                            <div class="form-group">
+                                <label for="familyName">Name</label>
+                                <input type="text" class="form-control form-input" id="familyName"
+                                    ng-model="family.name" placeholder="Enter family member's name" required>
+                            </div>
+                        </div>
+                        <div class="col-xl-3">
+                            <div class="form-group">
+                                <label for="age">Age</label>
+                                <input type="number" class="form-control form-input" id="age" ng-model="family.age"
+                                    placeholder="Enter age" required min="0">
+                            </div>
+                        </div>
+                        <div class="col-xl-3">
+                            <div class="form-group">
+                                <label for="familyMobile">Mobile Number</label>
+                                <input type="tel" class="form-control form-input" id="familyMobile"
+                                    ng-model="family.mobile" placeholder="Enter mobile number" required
+                                    pattern="[0-9]{10}">
+                            </div>
+                        </div>
+                        <div class="col-xl-3">
+                            <div class="form-group">
+                                <label for="occupation">Occupation</label>
+                                <input type="text" class="form-control form-input" id="occupation"
+                                    ng-model="family.occupation" placeholder="Enter occupation" required>
+                            </div>
+                        </div>
+                        <div class="col-xl-3">
+                            <div class="form-group">
+                                <label for="workPlace">Work Place</label>
+                                <input type="text" class="form-control form-input" id="workPlace"
+                                    ng-model="family.workPlace" placeholder="Enter workplace" required>
+                            </div>
+                        </div>
+                        <div class="col-xl-3">
+                            <div class="form-group">
+                                <label for="income">Monthly Income</label>
+                                <input type="number" class="form-control form-input" id="income"
+                                    ng-model="family.income" placeholder="Enter monthly income" required min="0">
+                            </div>
+                        </div>
+                        <div class="col-xl-3">
+                            <div class="form-group">
+                                <label for="saving">Saving</label>
+                                <input type="number" class="form-control form-input" id="saving"
+                                    ng-model="family.saving" placeholder="Enter saving amount" required min="0">
+                            </div>
+                        </div>
+                        <div class="col-xl-3">
+                            <div class="form-group">
+                                <label for="health">Health</label>
+                                <input type="text" class="form-control form-input" id="health" ng-model="family.health"
+                                    placeholder="Enter health details" required>
+                            </div>
+                        </div>
+                        <div class="col-xl-9">
+                            <div class="form-group">
+                                <label for="remarks">Remarks</label>
+                                <textarea class="form-control form-input" id="remarks" ng-model="family.remarks" rows="1"
+                                    placeholder="Enter remarks"></textarea>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-xl-3">
-                        <div class="form-group">
-                            <label for="familyName">Name</label>
-                            <input type="text" class="form-control form-input" id="familyName" ng-model="family.name"
-                                placeholder="Enter family member's name" required>
-                        </div>
-                    </div>
-                    <div class="col-xl-3">
-                        <div class="form-group">
-                            <label for="age">Age</label>
-                            <input type="number" class="form-control form-input" id="age" ng-model="family.age"
-                                placeholder="Enter age" required min="0">
-                        </div>
-                    </div>
-                    <div class="col-xl-3">
-                        <div class="form-group">
-                            <label for="familyMobile">Mobile Number</label>
-                            <input type="tel" class="form-control form-input" id="familyMobile" ng-model="family.mobile"
-                                placeholder="Enter mobile number" required pattern="[0-9]{10}">
-                        </div>
-                    </div>
-                    <div class="col-xl-3">
-                        <div class="form-group">
-                            <label for="occupation">Occupation</label>
-                            <input type="text" class="form-control form-input" id="occupation"
-                                ng-model="family.occupation" placeholder="Enter occupation" required>
-                        </div>
-                    </div>
-                    <div class="col-xl-3">
-                        <div class="form-group">
-                            <label for="workPlace">Work Place</label>
-                            <input type="text" class="form-control form-input" id="workPlace"
-                                ng-model="family.workPlace" placeholder="Enter workplace" required>
-                        </div>
-                    </div>
-                    <div class="col-xl-3">
-                        <div class="form-group">
-                            <label for="income">Monthly Income</label>
-                            <input type="number" class="form-control form-input" id="income" ng-model="family.income"
-                                placeholder="Enter monthly income" required min="0">
-                        </div>
-                    </div>
-                    <div class="col-xl-3">
-                        <div class="form-group">
-                            <label for="saving">Saving</label>
-                            <input type="number" class="form-control form-input" id="saving" ng-model="family.saving"
-                                placeholder="Enter saving amount" required min="0">
-                        </div>
-                    </div>
-                    <div class="col-xl-3">
-                        <div class="form-group">
-                            <label for="health">Health</label>
-                            <input type="text" class="form-control form-input" id="health" ng-model="family.health"
-                                placeholder="Enter health details" required>
-                        </div>
-                    </div>
-                    <div class="col-xl-9">
-                        <div class="form-group">
-                            <label for="remarks">Remarks</label>
-                            <textarea class="form-control" id="remarks" ng-model="family.remarks" rows="1"
-                                placeholder="Enter remarks"></textarea>
-                        </div>
-                    </div>
-                </div>
-                <div id="appendFamilyDetails"></div>
+                    <div id="appendFamilyDetails"></div>
 
-                <div class="form-group">
-                    <label for="kcPractice">Do parents know about your KC practice?</label>
-                </div>
-                <div class="d-flex">
-                    <div class="form-check mx-2">
-                        <input class="form-check-input" type="radio" name="kcPractice" id="kcPracticeYes"
-                            ng-model="family.kcPractice" value="Yes" required>
-                        <label class="form-check-label" for="kcPracticeYes">Yes</label>
+                    <div class="form-group">
+                        <label for="kcPractice">Do parents know about your KC practice?</label>
                     </div>
-                    <div class="form-check mx-2">
-                        <input class="form-check-input" type="radio" name="kcPractice" id="kcPracticeNo"
-                            ng-model="family.kcPractice" value="No">
-                        <label class="form-check-label" for="kcPracticeNo">No</label>
-                    </div>
-                </div>
-            </div>
-            <div class="form-section my-3">
-                <div class="d-flex justify-content-between align-items-center">
-                    <div>
-                        <h3 class="form-section-heading">Work Experience</h3>
-                    </div>
-                    <div><a class="btn btn-add-elem btn-sm">Add</a></div>
-                </div>
-                <div class="row">
-                    <div class="col-xl-3">
-                        <div class="form-group">
-                            <label for="role">Role</label>
-                            <input type="text" class="form-control form-input" id="role" ng-model="work.role"
-                                placeholder="Enter your role" required>
+                    <div class="d-flex">
+                        <div class="form-check mx-2">
+                            <input class="form-check-input" type="radio" name="kcPractice" id="kcPracticeYes"
+                                ng-model="family.kcPractice" value="Yes" required>
+                            <label class="form-check-label" for="kcPracticeYes">Yes</label>
                         </div>
-                    </div>
-                    <div class="col-xl-3">
-                        <div class="form-group">
-                            <label for="companyName">Company Name</label>
-                            <input type="text" class="form-control form-input" id="companyName"
-                                ng-model="work.companyName" placeholder="Enter company name" required>
-                        </div>
-                    </div>
-                    <div class="col-xl-3">
-                        <div class="form-group">
-                            <label for="experienceMonths">Experience - (Months)</label>
-                            <input type="number" class="form-control form-input" id="experienceMonths"
-                                ng-model="work.experienceMonths" placeholder="Enter experience in months" required
-                                min="0">
-                        </div>
-                    </div>
-                    <div class="col-xl-3">
-                        <div class="form-group">
-                            <label for="experienceYears">Experience - (Years)</label>
-                            <input type="number" class="form-control form-input" id="experienceYears"
-                                ng-model="work.experienceYears" placeholder="Enter experience in years" required
-                                min="0">
-                        </div>
-                    </div>
-                    <div class="col-xl-3">
-                        <div class="form-group">
-                            <label for="salary">Salary</label>
-                            <input type="number" class="form-control form-input" id="salary" ng-model="work.salary"
-                                placeholder="Enter salary" required min="0">
-                        </div>
-                    </div>
-                    <div class="col-xl-9">
-                        <div class="form-group">
-                            <label for="workRemarks">Remark</label>
-                            <textarea class="form-control" id="workRemarks" ng-model="work.remark" rows="1"
-                                placeholder="Enter remarks"></textarea>
+                        <div class="form-check mx-2">
+                            <input class="form-check-input" type="radio" name="kcPractice" id="kcPracticeNo"
+                                ng-model="family.kcPractice" value="No">
+                            <label class="form-check-label" for="kcPracticeNo">No</label>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="form-section my-3">
-                <h3 class="form-section-heading">Finance & Properties</h3>
-                <div class="row">
-                    <div class="col-xl-6">
-                        <div class="form-group">
-                            <label for="houseInName">Do you have any house in your name?</label>
-                            <input type="text" class="form-control form-input" id="houseInName"
-                                ng-model="finance.houseInName" placeholder="Yes/No" required>
+                <div class="form-section my-3">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                            <h3 class="form-section-heading">Work Experience</h3>
                         </div>
+                        <div><button class="btn btn-add-elem btn-sm">Add</></div>
                     </div>
-                    <div class="col-xl-6">
-                        <div class="form-group">
-                            <label for="loanInName">Do you have any loan in your name?</label>
-                            <input type="text" class="form-control form-input" id="loanInName"
-                                ng-model="finance.loanInName" placeholder="Yes/No" required>
+                    <div class="row">
+                        <div class="col-xl-3">
+                            <div class="form-group">
+                                <label for="role">Role</label>
+                                <input type="text" class="form-control form-input" id="role" ng-model="work.role"
+                                    placeholder="Enter your role" required>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-xl-6">
-                        <div class="form-group">
-                            <label for="currentSalary">How much is your current salary?</label>
-                            <input type="number" class="form-control form-input" id="currentSalary"
-                                ng-model="finance.currentSalary" placeholder="Enter your current salary" required
-                                min="0">
+                        <div class="col-xl-3">
+                            <div class="form-group">
+                                <label for="companyName">Company Name</label>
+                                <input type="text" class="form-control form-input" id="companyName"
+                                    ng-model="work.companyName" placeholder="Enter company name" required>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-xl-12">
-                        <div class="form-group">
-                            <label for="financeRemark">Remark</label>
-                            <textarea class="form-control" id="financeRemark" ng-model="finance.remark" rows="3"
-                                placeholder="Enter any remarks"></textarea>
+                        <div class="col-xl-3">
+                            <div class="form-group">
+                                <label for="experienceMonths">Experience - (Months)</label>
+                                <input type="number" class="form-control form-input" id="experienceMonths"
+                                    ng-model="work.experienceMonths" placeholder="Enter experience in months" required
+                                    min="0">
+                            </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-            <div class="form-section my-3">
-                <h3 class="form-section-heading">FOLK Journey</h3>
-                <div class="row">
-                    <div class="col-xl-3">
-                        <div class="form-group">
-                            <label for="inTouchWith">In Touch With</label>
-                            <input type="text" class="form-control form-input" id="inTouchWith"
-                                ng-model="journey.inTouchWith" placeholder="Enter name of contact" required>
+                        <div class="col-xl-3">
+                            <div class="form-group">
+                                <label for="experienceYears">Experience - (Years)</label>
+                                <input type="number" class="form-control form-input" id="experienceYears"
+                                    ng-model="work.experienceYears" placeholder="Enter experience in years" required
+                                    min="0">
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-xl-3">
-                        <div class="form-group">
-                            <label for="yearsInFolk">How many years</label>
-                            <input type="number" class="form-control form-input" id="yearsInFolk"
-                                ng-model="journey.yearsInFolk" placeholder="Enter number of years" required min="0">
+                        <div class="col-xl-3">
+                            <div class="form-group">
+                                <label for="salary">Salary</label>
+                                <input type="number" class="form-control form-input" id="salary" ng-model="work.salary"
+                                    placeholder="Enter salary" required min="0">
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-xl-3">
-                        <div class="form-group">
-                            <label for="yearsInKC">How many years</label>
-                            <input type="number" class="form-control form-input" id="yearsInKC"
-                                ng-model="journey.yearsInKC" placeholder="Enter number of years" required min="0">
-                        </div>
-                    </div>
-                    <div class="col-xl-3">
-                        <div class="form-group">
-                            <label for="kcThrough">Came to KC through</label>
-                            <input type="text" class="form-control form-input" id="kcThrough"
-                                ng-model="journey.kcThrough" placeholder="How did you come to KC?" required>
-                        </div>
-                    </div>
-                    <div class="col-xl-9">
-                        <div class="form-group">
-                            <label for="journeyRemark">Remark</label>
-                            <textarea class="form-control" id="journeyRemark" ng-model="journey.remark" rows="1"
-                                placeholder="Enter any remarks"></textarea>
+                        <div class="col-xl-9">
+                            <div class="form-group">
+                                <label for="workRemarks">Remark</label>
+                                <textarea class="form-control form-input" id="workRemarks" ng-model="work.remark" rows="1"
+                                    placeholder="Enter remarks"></textarea>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="form-section my-3">
-                <h3 class="form-section-heading">Turning Point</h3>
-                <div class="row">
-                    <div class="col-xl-12">
-                        <div class="form-group">
-                            <label for="turningPointRemark">Remark</label>
-                            <textarea class="form-control" id="turningPointRemark" ng-model="turningPoint.remark"
-                                rows="3" placeholder="Describe the turning point"></textarea>
+                <div class="form-section my-3">
+                    <h3 class="form-section-heading">Finance & Properties</h3>
+                    <div class="row">
+                        <div class="col-xl-6">
+                            <div class="form-group">
+                                <label for="houseInName">Do you have any house in your name?</label>
+                                <input type="text" class="form-control form-input" id="houseInName"
+                                    ng-model="finance.houseInName" placeholder="Yes/No" required>
+                            </div>
+                        </div>
+                        <div class="col-xl-6">
+                            <div class="form-group">
+                                <label for="loanInName">Do you have any loan in your name?</label>
+                                <input type="text" class="form-control form-input" id="loanInName"
+                                    ng-model="finance.loanInName" placeholder="Yes/No" required>
+                            </div>
+                        </div>
+                        <div class="col-xl-6">
+                            <div class="form-group">
+                                <label for="currentSalary">How much is your current salary?</label>
+                                <input type="number" class="form-control form-input" id="currentSalary"
+                                    ng-model="finance.currentSalary" placeholder="Enter your current salary" required
+                                    min="0">
+                            </div>
+                        </div>
+                        <div class="col-xl-12">
+                            <div class="form-group">
+                                <label for="financeRemark">Remark</label>
+                                <textarea class="form-control form-input" id="financeRemark" ng-model="finance.remark" rows="3"
+                                    placeholder="Enter any remarks"></textarea>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <!-- Submit Button -->
-            <div class="form-section my-3">
-                <button class="btn btn-primary" ng-click="submitForm(user)">Submit</button>
-            </div>
+                <div class="form-section my-3">
+                    <h3 class="form-section-heading">FOLK Journey</h3>
+                    <div class="row">
+                        <div class="col-xl-3">
+                            <div class="form-group">
+                                <label for="inTouchWith">In Touch With</label>
+                                <input type="text" class="form-control form-input" id="inTouchWith"
+                                    ng-model="journey.inTouchWith" placeholder="Enter name of contact" required>
+                            </div>
+                        </div>
+                        <div class="col-xl-3">
+                            <div class="form-group">
+                                <label for="yearsInFolk">How many years</label>
+                                <input type="number" class="form-control form-input" id="yearsInFolk"
+                                    ng-model="journey.yearsInFolk" placeholder="Enter number of years" required min="0">
+                            </div>
+                        </div>
+                        <div class="col-xl-3">
+                            <div class="form-group">
+                                <label for="yearsInKC">How many years</label>
+                                <input type="number" class="form-control form-input" id="yearsInKC"
+                                    ng-model="journey.yearsInKC" placeholder="Enter number of years" required min="0">
+                            </div>
+                        </div>
+                        <div class="col-xl-3">
+                            <div class="form-group">
+                                <label for="kcThrough">Came to KC through</label>
+                                <input type="text" class="form-control form-input" id="kcThrough"
+                                    ng-model="journey.kcThrough" placeholder="How did you come to KC?" required>
+                            </div>
+                        </div>
+                        <div class="col-xl-9">
+                            <div class="form-group">
+                                <label for="journeyRemark">Remark</label>
+                                <textarea class="form-control form-input" id="journeyRemark" ng-model="journey.remark" rows="1"
+                                    placeholder="Enter any remarks"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-section my-3">
+                    <h3 class="form-section-heading">Turning Point</h3>
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="form-group">
+                                <label for="turningPointRemark">Remark</label>
+                                <textarea class="form-control form-input" id="turningPointRemark" ng-model="turningPoint.remark"
+                                    rows="3" placeholder="Describe the turning point"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-section my-3 text-center">
+                    <button class="btn btn-primary submit-form" ng-click="submitForm(user)">Submit</button>
+                </div>
+            </form>
         </section>
     </main>
 
@@ -408,9 +411,33 @@
     <script src="assets/js/bootstrap.min.js" defer></script>
     <script src="assets/js/slick.min.js" defer></script>
     <script src="assets/js/main.js" defer></script>
-    <script src="assets/js/custom.js?v<?php echo time(); ?>"></script>
-    <script src="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/owl.carousel.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+
+    <script>
+        app.controller('FormController', function ($scope) {
+            $scope.user = {};
+            $scope.family = {};
+            $scope.work = {};
+            $scope.finance = {};
+            $scope.journey = {};
+            $scope.turningPoint = {};
+
+            $scope.submitForm = function (form) {
+                if (form.$invalid) {
+                    angular.forEach(form.$error, function (error) {
+                        angular.forEach(error, function (field) {
+                            field.$setTouched(); // Highlight the invalid fields
+                        });
+                    });
+                    alert('Please fill out the form correctly.');
+                } else {
+                    // Handle form submission
+                    alert('Form submitted successfully!');
+                }
+            };
+        });
+
+    </script>
 </body>
 
 </html>
