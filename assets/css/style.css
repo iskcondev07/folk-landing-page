@@ -52,10 +52,17 @@ main {
   background: #f6d25a;
   color: black;
   border-radius: 10px;
-  padding: 6px 25px;
+  padding: 5px 25px;
   font-size: 15px;
-  font-weight: 700;
+  font-weight: bold;
   border: none;
+  margin-bottom: 30px;
+  border: solid 1px #f6d25a;
+}
+.submit-form:hover{
+  border: solid 1px #f6d25a;
+  color: #f6d25a;
+  background-color: transparent;
 }
 /* form section  */
 .btn-add-elem {
@@ -63,13 +70,13 @@ main {
   font-weight: bold;
   padding: 5px 25px 5px 25px;
   color: #10141a;
-  border: 1px solid #d6d6d6;
+  border: 2px solid #d6d6d6;
   border-radius: 10px;
 }
 
 .btn-add-elem:hover {
   background-color: transparent;
-  color: #171040;
+  color: #d6d6d6;
 }
 
 .form-input {
@@ -77,10 +84,12 @@ main {
   color: #d6d6d6;
   background-color: #3e3b47;
   border-radius: 10px;
+  font-size: 12px;
 }
 
 .form-input::placeholder {
   color: #d6d6d6;
+  font-size: 12px;
 }
 
 .form-group label {
@@ -102,7 +111,7 @@ main {
 /* footer section  */
 
 footer {
-  background-color: #d6d6d6fff;
+  background-color: #d6d6d6;
   width: 100%;
   text-align: center;
   position: relative;
@@ -112,4 +121,14 @@ footer {
 
 p {
   margin-top: 1rem;
+}
+
+.form-control:focus {
+  background-color: #3e3b47;
+  border-color:none;
+  color: #d6d6d6;
+}
+
+input::-webkit-calendar-picker-indicator {
+  color: rgba(250, 242, 242, 0);
 }

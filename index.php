@@ -42,12 +42,21 @@
 
     <!-- Custom JS -->
     <script src="assets/app/generic_function.js" defer></script>
-    <script src="assets/app/campaign.js?v<?php echo time(); ?>" defer></script>
+    <script src="assets/app/folk.js?v<?php echo time(); ?>" defer></script>
 
     <!-- jQuery and Popper -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="assets/js/popper.min.js" defer></script>
+
+    <!-- google font  -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Spartan:wght@400;500;700&display=swap');
+
+        body {
+            font-family: 'Spartan', sans-serif;
+        }
+    </style>
 
     <!-- Style CSS -->
     <link href="assets/css/style.css?v<?php echo time(); ?>" rel="preload stylesheet" as="style"
@@ -55,7 +64,7 @@
     <title>Folk</title>
 </head>
 
-<body ng-app>
+<body ng-app="folkApp" ng-controller="folkCtrl" ng-init="pageLoad()">
     <!-- Header Section -->
     <header>
         <nav class="navbar navbar-expand-lg">
@@ -226,8 +235,8 @@
                         <div class="col-xl-9">
                             <div class="form-group">
                                 <label for="remarks">Remarks</label>
-                                <textarea class="form-control form-input" id="remarks" ng-model="family.remarks" rows="1"
-                                    placeholder="Enter remarks"></textarea>
+                                <textarea class="form-control form-input" id="remarks" ng-model="family.remarks"
+                                    rows="1" placeholder="Enter remarks"></textarea>
                             </div>
                         </div>
                     </div>
@@ -254,7 +263,8 @@
                         <div>
                             <h3 class="form-section-heading">Work Experience</h3>
                         </div>
-                        <div><button class="btn btn-add-elem btn-sm">Add</></div>
+                        <div><button class="btn btn-add-elem btn-sm">Add</>
+                        </div>
                     </div>
                     <div class="row">
                         <div class="col-xl-3">
@@ -297,8 +307,8 @@
                         <div class="col-xl-9">
                             <div class="form-group">
                                 <label for="workRemarks">Remark</label>
-                                <textarea class="form-control form-input" id="workRemarks" ng-model="work.remark" rows="1"
-                                    placeholder="Enter remarks"></textarea>
+                                <textarea class="form-control form-input" id="workRemarks" ng-model="work.remark"
+                                    rows="1" placeholder="Enter remarks"></textarea>
                             </div>
                         </div>
                     </div>
@@ -331,8 +341,8 @@
                         <div class="col-xl-12">
                             <div class="form-group">
                                 <label for="financeRemark">Remark</label>
-                                <textarea class="form-control form-input" id="financeRemark" ng-model="finance.remark" rows="3"
-                                    placeholder="Enter any remarks"></textarea>
+                                <textarea class="form-control form-input" id="financeRemark" ng-model="finance.remark"
+                                    rows="3" placeholder="Enter any remarks"></textarea>
                             </div>
                         </div>
                     </div>
@@ -371,8 +381,8 @@
                         <div class="col-xl-9">
                             <div class="form-group">
                                 <label for="journeyRemark">Remark</label>
-                                <textarea class="form-control form-input" id="journeyRemark" ng-model="journey.remark" rows="1"
-                                    placeholder="Enter any remarks"></textarea>
+                                <textarea class="form-control form-input" id="journeyRemark" ng-model="journey.remark"
+                                    rows="1" placeholder="Enter any remarks"></textarea>
                             </div>
                         </div>
                     </div>
@@ -383,14 +393,15 @@
                         <div class="col-xl-12">
                             <div class="form-group">
                                 <label for="turningPointRemark">Remark</label>
-                                <textarea class="form-control form-input" id="turningPointRemark" ng-model="turningPoint.remark"
-                                    rows="3" placeholder="Describe the turning point"></textarea>
+                                <textarea class="form-control form-input" id="turningPointRemark"
+                                    ng-model="turningPoint.remark" rows="3"
+                                    placeholder="Describe the turning point"></textarea>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="form-section my-3 text-center">
-                    <button class="btn btn-primary submit-form" ng-click="submitForm(user)">Submit</button>
+                    <button class="btn btn-primary submit-form" ng-click="submitForm()">Submit</button>
                 </div>
             </form>
         </section>
@@ -411,33 +422,6 @@
     <script src="assets/js/bootstrap.min.js" defer></script>
     <script src="assets/js/slick.min.js" defer></script>
     <script src="assets/js/main.js" defer></script>
-
-
-    <script>
-        app.controller('FormController', function ($scope) {
-            $scope.user = {};
-            $scope.family = {};
-            $scope.work = {};
-            $scope.finance = {};
-            $scope.journey = {};
-            $scope.turningPoint = {};
-
-            $scope.submitForm = function (form) {
-                if (form.$invalid) {
-                    angular.forEach(form.$error, function (error) {
-                        angular.forEach(error, function (field) {
-                            field.$setTouched(); // Highlight the invalid fields
-                        });
-                    });
-                    alert('Please fill out the form correctly.');
-                } else {
-                    // Handle form submission
-                    alert('Form submitted successfully!');
-                }
-            };
-        });
-
-    </script>
 </body>
 
 </html>
