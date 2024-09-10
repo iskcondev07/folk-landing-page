@@ -1,0 +1,744 @@
+
+@media screen and (max-width:1921px) {
+   
+}
+@media screen and (max-width:1680px) {
+    .desc-para {
+        font-size: 20px;
+    }
+    .owl-nav {
+        position: absolute;
+        top: 34%;
+        width: 100%;
+    }
+}
+@media screen and (max-width:1668px) {
+
+}
+@media screen and (max-width:1600px) {
+    .desc-para {
+        font-size: 17px;
+    }
+    .footer-section p {
+        font-size: 16px;
+    }
+    .seva-head {
+        font-size: 20px;
+    }
+    .seva-sub-head-title {
+        font-size: 13px;
+    }
+    .seva-text-box2 {
+        transform: translateY(7px);
+        padding: 0px 20px;
+        height: 87px;
+    }
+}
+@media screen and (max-width:1536px) {
+    .owl-nav {
+        top: 32%;
+    }
+}
+@media screen and (max-width:1440px) {
+    .desc-para {
+        font-size: 18px;
+    }
+    .card-desk-para{
+        font-size: 18px;
+    }
+    .card-desk-para2{
+        font-size: 18px;
+    }
+    .card-desk-h5{
+        font-size: 28px;
+    }
+    .desk-form-div .seva-offer-heading-desk {
+        font-size: 28px;
+    }
+    .desk-form-div .personal-details {
+        font-size: 20px;
+    }
+    .seva-head {
+        font-size: 18px;
+    }
+    .seva-sub-head-title {
+        font-size: 13px;
+    }
+    .seva-text-box2 {
+        padding: 0px 12px;
+    }
+    .custom-control-label {
+        font-size: 13px;
+    }
+    .desk-form-div .payment-message {
+        font-size: 13px;
+    }
+    .owl-nav {
+        top: 30%;
+    }
+}
+@media screen and (max-width:1366px) {
+   
+}
+@media screen and (max-width:1280px) {
+    .seva-head {
+        font-size: 16px;
+    }
+    .seva-sub-head-title {
+        font-size: 11px;
+    }
+    .video-container {
+        height: 407px;
+    }
+    .amt-class {
+        font-size: 19px;
+    }
+    .sub-amt-cls, .amount-text-desk {
+        font-size: 17px;
+    }
+    .seva-offer-heading-desk {
+        font-size: 26px;
+    }
+    .personal-details {
+        font-size: 23px;
+    }
+    .desc-para {
+        font-size: 14px;
+    }
+    .card-desk-para{
+        font-size: 17px;
+    }
+    .card-desk-para2{
+        font-size: 17px;
+    }
+    .card-desk-h5{
+    font-size: 23px;
+    }
+    .food-heading {
+        font-size: 31px;
+    }
+    .com-heading {
+        font-size: 26px;
+    }
+    .footer-section p {
+        font-size: 16px;
+    }
+    .owl-nav {
+        top: 28%;
+    }
+}
+@media screen and (max-width:1200px) {
+    .owl-nav {
+        top: 24%;
+    }
+    .seva-text-box2
+    {
+        transform: translateY(21px);
+    }
+    .seva-head {
+        font-size: 15px;
+    }
+    .seva-offer-heading-desk {
+        font-size: 24px;
+    }
+    .desk-form-div .seva-offer-heading-desk {
+        font-size: 26px;
+    }
+    .personal-details {
+        font-size: 21px;
+    }
+    .desc-para {
+        font-size: 14px;
+    }
+    .card-desk-para{
+        font-size: 15px;
+    }
+    .card-desk-para2{
+        font-size: 15px;
+    }
+    .card-desk-h5{
+    font-size: 21px;
+    }
+    .payment-message{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width:1199px) {
+    
+}
+@media screen and (max-width:1080px) {
+    .seva-text-box2 {
+        transform: translateY(29px);
+    }
+    .desk-form-div .seva-offer-heading-desk {
+        font-size: 24px;
+    }
+    .seva-head {
+        font-size: 13px;
+    }
+    .seva-sub-head-title {
+        font-size: 10px;
+    }
+    .owl-nav {
+        top: 22%;
+    }
+    .owl-prev {
+        left: -25px;
+        width: 33px;
+        height: 33px;
+    }
+    .owl-next {
+        right: -25px;
+        width: 33px;
+        height: 33px;
+    }
+    .desc-para {
+        font-size: 13px;
+    }
+    .seva-offer-heading-desk {
+        font-size: 23px;
+    }
+    .personal-details {
+        font-size: 19px;
+    }
+    .amt-class {
+        font-size: 17px;
+    }
+    .sub-amt-cls, .amount-text-desk {
+        font-size: 16px;
+    }
+}
+@media screen and (max-width:1024px) {
+    .seva-para {
+        font-size: 14px;
+    }
+    .donate-now {
+        border-radius: 30px;
+        padding: 5px 25px;
+    }
+    .donate-now span {
+        font-size: 18px;
+        font-weight: 600;
+    }
+    .order-btn2 span {
+        font-size: 12px!important;
+        font-weight: 700;
+    }
+    .seva-head {
+        font-size: 14px;
+    }
+    .seva-text-box2 {
+        transform: translateY(29px);
+    }
+}
+@media screen and (max-width:992px) {
+    .desc-para {
+        font-size: 12px;
+    }
+    .card-desk-para{
+        font-size: 13px;
+    }
+    .card-desk-para2{
+        font-size: 13px;
+    }
+    .card-desk-h5{
+    font-size: 19px;
+    }
+    .amt-class {
+        font-size: 15px;
+    }
+    .sub-amt-cls, .amount-text-desk {
+        font-size: 15px;
+    }
+    .tax-note {
+        font-size: 11px;
+    }
+    .payment-message{
+        font-size: 12px;
+    }
+    .custom-control-label {
+        font-size: 14px;
+    }
+    .com-heading {
+        font-size: 24px;
+    }
+    .footer-section p {
+        font-size: 13px;
+    }
+}
+@media screen and (max-width:991px) {
+   
+}
+@media screen and (max-width:912px) {
+   
+}
+@media screen and (max-width:828px) {
+    .seva-offer-heading-desk {
+        font-size: 20px;
+    }
+    .amt-class {
+        font-size: 13px;
+    }
+    .sub-amt-cls, .amount-text-desk {
+        font-size: 14px;
+    }
+    .personal-details {
+        font-size: 17px;
+    }
+}
+@media screen and (max-width:820px) {
+    .desc-para {
+        font-size: 11px;
+    }
+    .card-desk-para{
+        font-size: 13px;
+    }
+    .card-desk-para2{
+        font-size: 13px;
+    }
+    .card-desk-h5{
+    font-size: 17px;
+    }
+}
+@media screen and (max-width:800px) {
+    
+}
+@media screen and (max-width:768px) {
+    .amt-class {
+        font-size: 12px;
+    }
+    .desc-para {
+        font-size: 12px;
+        text-align: center;
+    }
+    .amt-class span {
+        font-size: 10px;
+        font-weight: 600;
+    }
+    .sub-amt-cls, .amount-text-desk {
+        font-size: 12px;
+    }
+    .food-heading {
+        font-size: 27px;
+    }
+    .com-heading {
+        font-size: 20px;
+    }   
+    .btn-h-donate {
+        font-size: 12px;
+    }
+    .donate-now span {
+        font-size: 15px;
+    }
+}
+@media screen and (max-width:767px) {
+    .sub-amt-cls, .amount-text-desk {
+        font-size: 20px;
+    }
+    .donate-now span {
+        font-size: 24px;
+    }
+    .food-section{
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
+    }
+    .food-heading {
+        font-size: 46px;
+    }
+    .com-heading {
+        font-size: 33px;
+        color: black!important;
+    }
+    .mob-consumption{
+        background: #d1d1d1;
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
+    }
+    .seva-head {
+        font-size: 19px;
+    }
+    .seva-sub-head-title {
+        font-size: 12px;
+    }
+    .card-desk-h5 {
+        font-size: 22px;
+    }
+    .video-container {
+        height: 680px;
+        display: none;
+    }
+    .seva-text-box2 {
+        transform: translateY(-8px);
+        padding: 0px 20px;
+        height: 124px;
+  }
+}
+@media screen and (max-width:750px) {
+    .lbl {
+        cursor: pointer;
+        display: flex;
+    }
+    .seva-para {
+        padding-left: 7px;
+    }
+    .role-checkbox {
+        width: 25px;
+        height: 19px;
+        margin-top: 4px;
+    }
+    .custom-select:focus {
+        border-color: #80bdff;
+        outline: none;
+        box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+        background: #f5e6bc;
+        border: none!important;
+    }
+    .custom-select:disabled {
+        color: black!important;
+        background-color: #e9ecef;
+    }
+    .copyright-txt {
+        font-size: 12px;
+    }
+}
+@media screen and (max-width:640px) {
+    .mob-card-img-f {
+        margin-top: -180px;
+    }
+    .mob-card-img-s {
+        margin-top: -180px;
+    }
+    .mob-card-img-t {
+        margin-top: -180px;
+    }
+    .mob-card-img-fo {
+        margin-top: -180px;
+    }
+    .desk-form-div .amt-class {
+        font-size: 24px;
+    }
+    .sub-amt-cls, .amount-text-desk {
+        font-size: 15px;
+    }
+    .donate-now span {
+        font-size: 22px;
+    }   
+    .sv-title {
+        font-weight: 600;
+        font-size: 18px;
+    }
+    .sv-para {
+        font-size: 10px;
+        font-weight: 600;
+    }
+    .desc-ul li {
+        padding-bottom: 8px;
+    }
+}
+@media screen and (max-width:576px) {
+    .mob-card-img-t {
+        margin-top: -169px;
+    }
+    .mob-card-img-fo {
+        margin-top: -169px;
+    }
+}
+@media screen and (max-width:575px) {
+    .video-container iframe {
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+        position: absolute;
+        top: -117px;
+        left: 0;
+        width: 100%;
+        height: 117%;
+    }
+    .desc-para {
+        font-size: 13px;
+        text-align: center;
+    }
+    #readBtn{
+        font-weight: 600;
+        cursor: pointer;
+    }
+    .card-desk-para , .card-desk-para2 {
+        font-size: 18px;
+        text-align: left;
+    }
+    /* .table {
+        color: #fff;
+    } */
+    .desk-form-div .donate-now {
+        width: 100%;
+    }
+    /* .desk-form-div {
+        background: #240334;
+        border-bottom-left-radius:0!important;
+        border-bottom-right-radius:0!important;
+        background-image: linear-gradient(235deg, #d16ba5, #c777b9, #ba83ca, #b676b0,#b47dae, #cd7087,#c47a8c, #c18292,#b676b0);
+    } */
+
+    .owl-nav{
+        display: none;
+    }
+    /* body{
+      background-image: url(../img/background.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      color: #fff;
+    } */
+    .footer-section {
+        border-top: none;
+    }
+    .footer-section p {
+        font-size: 11px;
+    }
+    .offer-img{
+        display: none;
+    }
+    .offer-img2{
+        display: inline;
+        width: 50px;
+    }
+    .seva-text-box2{
+        position: absolute;
+        bottom: 0;
+        transform: translateY(48px);
+        padding: 0px 15px;
+        width: 100%;
+        left: 0;
+    }
+}
+@media screen and (max-width:540px) {
+    
+    select.round2 {
+        background-image: linear-gradient(45deg, transparent 50%, gray 50%), linear-gradient(135deg, gray 50%, transparent 50%);
+        background-position: calc(100% - 17px) calc(1em + 5px), calc(100% - 12px) calc(1em + 5px), calc(95% - 0.5em) 0.9em;
+        background-size: 9px 7px, 5px 8px, 2em 2em;
+        background-repeat: no-repeat;
+    }
+    .custom-select {
+        font-size: 15px;
+    }
+    .desk-form-div {
+        border-top-right-radius: 36px;
+        border-top-left-radius: 36px;
+        border-bottom-right-radius:36px;
+        border-bottom-left-radius: 36px;
+    }
+    .amount-select {
+        background: #f5e6bc;
+        color: #121a02!important;
+        font-weight: 600;
+        border: none;
+    }
+    .food-heading {
+        font-size: 41px;
+    }
+    select.round {
+
+        background-size: 9px 7px, 5px 8px, 2em 2em;
+        background-repeat: no-repeat;
+    }
+    .videoFrame
+    {
+        border-radius:25px;
+        height:200px;
+    }
+    .dont-img{
+        width: 50px;
+    }
+    input[type=number] {
+        border-radius: 30px;
+    }
+}
+@media screen and (max-width:475px) {
+    .owl-nav {
+        top: 42%;
+    }
+    .owl-stage-outer .owl-stage{     
+        padding-left: 8px!important; 
+    }
+    .mob-card-img-f {
+        margin-top: -132px;
+    }
+    .mob-card-img-s {
+        margin-top: -132px;
+    }
+    .mob-card-img-t {
+        margin-top: -132px;
+    }
+    .mob-card-img-fo {
+        margin-top: -132px;
+    }
+    .errorSpan {
+        font-size: 12px;
+    }
+}
+@media screen and (max-width:450px) {
+    .sv-title {
+        font-weight: 600;
+        font-size: 16px;
+    }
+}
+@media screen and (max-width:425px) {
+    .mob-card-img-t {
+        margin-top: -127px;
+    }
+    .mob-card-img-fo {
+        margin-top: -127px;
+    }
+}
+@media screen and (max-width:414px) {
+    .mob-card-img-t {
+        margin-top: -117px;
+    }
+    .mob-card-img-fo {
+        margin-top: -117px;
+    }
+    .desk-form-div .amt-class {
+        font-size: 20px;
+    }
+    .sub-amt-cls, .amount-text-desk {
+        font-size: 16px;
+    }
+    .desk-form-div .btn.margin-seva-btn {
+        padding: 12px 0;
+    }
+    .desk-form-div .seva-offer-heading-desk {
+        font-size: 24px;
+    }
+    .food-heading {
+        font-size: 36px;
+    }
+    .video-container iframe {
+        top: -97px;
+        height: 113%;
+    }
+}
+@media screen and (max-width:412px) {
+    select.round2 {
+        background-image: linear-gradient(45deg, transparent 50%, gray 50%), linear-gradient(135deg, gray 50%, transparent 50%);
+        background-position: calc(100% - 17px) calc(1em + 1px), calc(100% - 12px) calc(1em + 1px), calc(95% - 0.5em) 0.9em;
+        background-size: 9px 7px, 5px 8px, 2em 2em;
+        background-repeat: no-repeat;
+    }
+}
+@media screen and (max-width:400px) {
+    .desk-form-div .amt-class {
+        font-size: 20px;
+    }
+    .sub-amt-cls, .amount-text-desk {
+        font-size: 17px;
+    }
+    .desk-form-div .btn.margin-seva-btn {
+        padding: 12px 0;
+    }
+    .food-heading {
+        font-size: 36px;
+    }
+    .desk-form-div .donate-now {
+        height: 46px;
+    }
+    .donate-now span {
+        font-size: 20px;
+    }
+    .mob-card-img-f {
+        margin-top: -126px;
+    }
+    .mob-card-img-s {
+        margin-top: -126px;
+    }
+    .seva-head {
+        font-size: 17px;
+    }
+    .seva-sub-head-title {
+        font-size: 12px;
+    }
+}
+@media screen and (max-width:393px) {
+    .card-desk-h5 {
+        font-size: 24px;
+    }
+    .mob-card-img-f {
+        margin-top: -123px;
+    }
+    .mob-card-img-s {
+        margin-top: -123px;
+    }
+    .mob-card-img-t {
+        margin-top: -118px;
+    }
+    .mob-card-img-fo {
+        margin-top: -118px;
+    }
+    .food-heading {
+        font-size: 34px;
+    }
+}
+@media screen and (max-width:390px) {
+    .desk-form-div .seva-offer-heading-desk {
+        font-size: 20px;
+    }
+    .donate-now {
+        padding: 3px 17px;
+    }
+}
+@media screen and (max-width:375px) {
+    .mob-card-img-f {
+        margin-top: -116px;
+    }
+    .mob-card-img-s {
+        margin-top: -116px;
+    }
+    .mob-card-img-t {
+        margin-top: -111px;
+    }
+    .mob-card-img-fo {
+        margin-top: -111px;
+    }
+    .com-heading {
+        font-size: 29px;
+    }
+    .food-heading {
+        font-size: 32px;
+    }
+    .video-container {
+        height: 591px;
+    }
+    .video-container iframe {
+        top: -43px;
+        height: 106%;
+    }
+    select.round2 {
+        background-image: linear-gradient(45deg, transparent 50%, gray 50%), linear-gradient(135deg, gray 50%, transparent 50%);
+        background-position: calc(100% - 17px) calc(1em + 1px), calc(100% - 12px) calc(1em + 1px), calc(95% - 0.5em) 0.9em;
+        background-size: 9px 7px, 5px 8px, 2em 2em;
+        background-repeat: no-repeat;
+    }
+}
+@media screen and (max-width:360px) {
+    .mob-card-img-f {
+        margin-top: -109px;
+    }
+    .mob-card-img-s {
+        margin-top: -109px;
+    }
+    .mob-card-img-t {
+        margin-top: -99px;
+    }
+    .mob-card-img-fo {
+        margin-top: -99px;
+    }
+
+}
+@media screen and (max-width:350px) {
+ 
+}
+@media screen and (max-width:320px) {
+    
+}
+@media screen and (max-width:280px) {
+    
+}
