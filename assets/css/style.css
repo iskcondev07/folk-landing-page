@@ -1,712 +1,77 @@
-/* TOP BUTTON CSS*/
-body{
-    overflow-x: hidden;
-}
-.top-btn {
-    position: fixed;
-    bottom: 20px;
-    right: 30px;
-    padding: 12px;
-    color: #fff;
-    background: #f6d25a;
-    z-index: 9999999;
-    transition: all 0.3s;
-    border: none;
-    display: none;
-}
-.krishna-imge{
-    width: 100%;
-}
-.hide-div
-{
-    display: none;
-}
-.sevaul{
-    display: flex;
-    padding: 0;
-    list-style: none;
-    column-gap: 15px;
-}
-.sevali
-{
-    position: relative;
-}
-.banner-img,.mobile-img
-{
-    border-bottom-right-radius: 30px;
-    border-bottom-left-radius: 30px;
-}
-.font12{
-    font-size: 12px;
-}
-.font14{
-    font-size: 12px;
-    margin-bottom: 0px;
-}
-.amtpara{
-    margin-bottom: 0;
-    font-size: 15px;
-}
-#readBtn{
-    color: #240334;
-    font-weight: 600;
-    cursor: pointer;
+/** @format */
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
 }
 
-.offer-img2{
-    display: none;
-}
-.top-btn:hover {
-    color: #0a0626;
-}
-.top-btn:focus {
-    border: none;
-    box-shadow: none;
-    color: #fff;
-}
-.top-btn i {
-    font-size: 22px;
-    text-align: center;
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
-/* ////////Banner Section //////// */
-.header-donate{
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 11111;
-    background: #fff;
+body {
+  /* background: linear-gradient(135deg, #1e0f61, #300053, #0a0a0a); */
 }
+
+
+main {
+  flex: 1;
+}
+
+/* header section   */
 .header-logo {
-    width: 115px;
-}
-.btn-h-donate{
-    background: #F6D25A;
-    color: black;
-    border-radius: 20px;
-    padding: 6px 22px;
-    font-size: 15px;
-    font-weight: 700;
-    border: none;
-}
-.btn-h-donate:hover{
-    color: #162424;
-    background: #fff;
-    border: 1px solid #162424;
-
-}
-.banner-section{
-    margin-top: 63px;
-    z-index: 10;
-    position: relative;
-}
-.banner-image img, .mobile-image img{
-    width: 100%;
-}
-.card-section img{
-    width: 100%;
-}
-.mob-card-img-f{
-    position: relative;
-    z-index: 9;
-    margin-top: -77px;
-}
-.mob-card-img-s{
-    position: relative;
-    z-index: 8;
-    margin-top: -77px;
-}
-.mob-card-img-t{
-    position: relative;
-    z-index: 7;
-    margin-top: -77px;
-}
-.mob-card-img-fo{
-    position: relative;
-    z-index: 6;
-    margin-top: -77px;
-}
-.card-imge{
-    border-radius: 40px;
-    width: 100%;
-}
-.food-section {
-    background:#262626;
-}
-.footer-section p{
-    font-size: 18px;
-    font-weight: 500;
-    margin: 0;
-}
-.food-image{
-    width: 100%;
-}
-.food-section h5{
-    color: #fff;
-    display: inline-block;
-}
-.food-heading{
-    font-size: 35px;
-    padding: 0 8px 0px 8px;
-}
-.com-heading{
-    font-size: 29px;
-    padding: 0 8px 0px 8px;
-}
-.card-header-title{
-    font-size: 25px;
-    font-weight: 700;
-}
-.com-image{
-    width: 100%;
-}
-.mob-krishna-imge{
-width: 100%;
-}
-.desc-para{
-    font-size: 16px;
-    font-weight: 480;
-}
-.card-desk-para{
-    font-size: 18px;
-    font-weight: 700;
-}
-.card-desk-para2{
-    font-size: 18px;
-    font-weight: 700;
-    padding: 7px 18px 11px 15px;
-}
-.card-desk-h5{
-font-size: 27px;
-}
-.amt-class{
-    margin: 0;
-    font-size: 21px;
-    font-weight: 700;
-}
-.amt-class span{
-    font-size: 15px;
-    font-weight: 600;
-}
-.desk-form-div{
-    background: #371705;
-    border-radius: 36px;
-    padding: 32px 12px 0px 12px;
-    color: #fff;
-}
-.seva-offer-heading-desk{
-    font-size: 28px;
-    font-weight: 700;
-    text-align: center;
-    color: #fff;
-}
-.btn.margin-seva-btn
-{
-    background: #FCF375;
-    color: #fff;
-    font-weight: 600;
-    width: 100%;
-    padding: 9px 0;
-    border-radius: 14px;
-}
-.btn.margin-seva-btn.added{
-    background: #fff;
-    color: #cb3812;
-    border: 1px solid #FCF375;
-}
-.btn.mob-margin-seva-btn.added{
-    background: #fff;
-    color: #58382C;
-    border: 1px solid #58382C;
-}
-.sub-amt-cls,.amount-text-desk{
-    margin: 0;
-    font-weight: 700;
-}
-.sub-amt-cls
-{
-    line-height: 0.8;
-}
-.form-amount-title{
-    margin: 2px;
-    font-size: 13px;
-    color: #58382C;
-    font-weight: 600;
-}
-a{
-    text-decoration: none;
-}
-.video-container
-{
-    height: 449px;
-    display: none;
-    transition: opacity 0.5s ease-in-out;
-    position: relative;
-    overflow: hidden;
-}
-.video-container iframe{
-    border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 30px;
-    position: absolute;
-    top: -117px;
-    left: 0;
-    width: 100%;
-    height: 126%;
-}
-.seva-text-box2{
-    position: absolute;
-    bottom: 0;
-    transform: translateY(-8px);
-    padding: 0px 12px;
-    width: 100%;
-    left: 0;
-}
-.seva-btn.count-seva{
-    display: none;
-}
-.errorSpan{
-    font-size: 15px;
-    font-weight: 600;
-    color: #f6f7a7;
-    text-align: center;
-    display: block;
-}
-.donate-now {
-    background: #fae29c;
-    color: #4e2b00;
-    border-radius: 30px;
-    padding: 8px 47px;
-}
-.donate-now:hover{
-    color: #651d1e;
-    background: #fff;
-    border: 1px solid #A8243B;
-}
-.donate-now span{
-    font-size: 18px;
-    font-weight: 700;
-}
-.order-btn2 {
-    background: #A8243B;
-    color: #240334;
-    border-radius: 30px;
-    padding: 3px 12px;
-}
-.order-btn2 span{
-    font-size: 12px;
-    font-weight: 700;
-}
-.select-label {
-    font-size: 11px !important;
-    /* margin-bottom: -49px; */
-    z-index: 99999;
-    position: absolute;
-    font-weight: 600;
-    padding-left: 25px !important;
-    color: #343434 !important;
-    top: 10px !important;
-}
-.select-label-desk {
-    font-size: 11px !important;
-    /* margin-bottom: -49px; */
-    z-index: 99999;
-    position: absolute;
-    font-weight: 600;
-    padding-left: 25px !important;
-    color: #343434 !important;
-    top: 10px !important;
-}
-.group{ 
-    position:relative; 
-    margin-top: 7px;
-  }
-  .select, input[type=text] {
-    padding: 18px 8px 8px 21px;
-    display: block;
-    width: 100%;
-    border: none;
-    border-bottom: 1px solid #fff;
-    background: #fff;
-    color: #343434;
-    font-size: 14px !important;
-    border-radius: 30px;
-    height: 43px;
-  }
-  input[type=number] {
-    padding: 18px 8px 8px 21px;
-    display: block;
-    width: 100%;
-    border: none;
-    border-bottom: 1px solid #fff;
-    background: #fff;
-    color: #343434;
-    font-size: 14px !important;
-    border-radius: 14px;
-    height: 45px;
-}
-  .select, input[type=text]:focus { 
-    outline:none;
- }
- input[type=number]:focus { 
-    outline:none;
- }
-label.google-material {
-    color: #706f6f;
-    font-size: 14px;
-    font-weight: normal;
-    position: absolute;
-    pointer-events: none;
-    left: 17px;
-    top: 11px;
-    transition: 0.2s ease all;
-    -moz-transition: 0.2s ease all;
-    -webkit-transition: 0.2s ease all;
-}
-.select, input[type=text]:focus ~ label.google-material,.select,input[type=text]:valid ~ label.google-material {
-    top: 2px;
-    font-size: 11px;
-    color: #020202;
-    font-weight: 600;
-    left: 20px;
-}
-input[type=number]:focus ~ label.google-material,input[type=number]:valid ~ label.google-material {
-    top: 2px;
-    font-size: 11px;
-    color: #020202;
-    font-weight: 600;
-    left: 20px;
-}
-.bar 	{ position:relative; display:block; width:100%; }
-  .bar:before, .bar:after 	{
-    content:'';
-    /*height:2px; */
-    width:0;
-    bottom:0px; 
-    position:absolute;
-    background:#fff; 
-    transition:0.2s ease all; 
-    -moz-transition:0.2s ease all; 
-    -webkit-transition:0.2s ease all;
-  }
-  .bar:before {
-    left:50%;
-  }
-  .bar:after {
-    right:50%; 
-  }
-  
-  /* active state */
-  input[type=text]:focus ~ .bar:before, input[type=text]:focus ~ .bar:after {
-    width:50%;
-  }
-  input[type=number]:focus ~ .bar:before, input[type=number]:focus ~ .bar:after {
-    width:50%;
-  }
-   /* HIGHLIGHTER ================================== */
-   .highlight {
-    position:absolute;
-    height:60%; 
-    width:100px; 
-    top:25%; 
-    left:0;
-    pointer-events:none;
-    opacity:0.5;
-  }
-  
-  /* active state */
-  .select, input[type=text]:focus ~ .highlight {
-    -webkit-animation:inputHighlighter 0.3s ease;
-    -moz-animation:inputHighlighter 0.3s ease;
-    animation:inputHighlighter 0.3s ease;
-  }
-  input[type=number]:focus ~ .highlight {
-    -webkit-animation:inputHighlighter 0.3s ease;
-    -moz-animation:inputHighlighter 0.3s ease;
-    animation:inputHighlighter 0.3s ease;
-  }
-  input[type="number"]::-webkit-inner-spin-button,
-    input[type="number"]::-webkit-outer-spin-button {
-        -webkit-appearance: none;
-        margin: 0;
-    }
-
-    /* For other browsers */
-    input[type="number"] {
-        -moz-appearance: textfield;
-    }
-   /* ANIMATIONS ================ */
-   @-webkit-keyframes inputHighlighter {
-    from { background:#5264AE; }
-  to 	{ width:0; background:transparent; }
-}
-@-moz-keyframes inputHighlighter {
-    from { background:#5264AE; }
-  to 	{ width:0; background:transparent; }
-}
-@keyframes inputHighlighter {
-    from { background:#5264AE; }
-  to 	{ width:0; background:transparent; }
-}
-.reservation-input {
-    color: #403d3d;
-    font-size: 14px;
-    padding-left: 16px;
-    width: 100%;
-    height: 45px;
-    border: none;
-    padding-top: 13px;
-    padding-left: 24px;
-}
-.reservation-input.reservation-input2 {
-    padding-top: 7px;
-    padding-left: 24px;
-}
-.reservation-input:focus,
-    .reservation-textarea:focus {
-        border: 1px solid #1059be;
-        box-shadow: none;
-}
-.custom-select {
-    border-radius: 30px !important;
-}
-select.round {
-
-    background-size: 9px 7px, 5px 8px, 2em 2em;
-    background-repeat: no-repeat;
-}
-select.round2 {
-    background-image: linear-gradient(45deg, transparent 50%, gray 50%), linear-gradient(135deg, gray 50%, transparent 50%);
-    background-position: calc(100% - 27px) calc(1em + 8px), calc(100% - 22px) calc(1em + 8px), calc(95% - 0.5em) 0.9em;
-    background-size: 9px 7px, 5px 8px, 2em 2em;
-    background-repeat: no-repeat;
-}
-.cal-icon {
-    position: absolute;
-    right: 12px;
-    color: #000;
-    top: 15px;
-}
-.pg-title,.loading
-{
-    text-align: center;
-}
-.personal-details{
-    font-size: 25px;
-    font-weight: 700;
-    color: #fff;
-}
-.tax-note{
-    font-size: 13px;
-    font-weight: 600;
-    margin: 0;
-}
-.payment-message a{
-    color: #fbffaa;
-}
-.red{
-    color: red;
-}
-#errorMsg{
-    color: #fbffaa;
-    font-weight: 600;
-    text-align: center;
-}
-.payment-message a {
-    text-decoration: underline;
-}
-.mob-form{ 
-     background: #262626;
-     margin-top: -67px;
-     border-bottom-left-radius: 50px;
-     border-bottom-right-radius: 50px;
-     z-index: 5;
-     position: relative;
+  width: 100px;
+}
+.btn-h-donate {
+  background: #f6d25a;
+  color: black;
+  border-radius: 20px;
+  padding: 6px 22px;
+  font-size: 15px;
+  font-weight: 700;
+  border: none;
 }
 
-.desk-form-div .seva-offer-heading-desk{
-    font-size: 30px;
-}
-.desk-form-div .btn.margin-seva-btn{
-    background: #fff;
-    border-radius: 15px;
-    font-size: 18px;
-    padding: 3px 0;
-    color: #121a02;
-    font-weight: 700;
-    line-height: 1.3;
-    height: 43px;
-}
-.desk-form-div .btn.margin-seva-btn.added{
-    background: #f6d25a;
-    color: #000;
-    border: 1px solid #f6d25a;
-}
-.desk-form-div .btn.margin-seva-btn.amt-btn-clr2-desk{
-    padding: 15px 0;
+.header-element {
+  display: flex;
+  justify-content: space-between;
+  width: 90vw;
+  margin-left: 5vw;
+  margin-right: 5vw;
 }
 
-.desk-form-div .amt-class {
-    font-size: 27px;
+.navbar {
+  background-color: #2c2c2c;
 }
-.desk-form-div .amt-class span {
-    font-size: 14px;
+/* form section  */
+.btn-add-elem{
+  background-color: #fcfcfc;
+  font-weight: bold;
+  padding: 5px 25px 5px 25px;
 }
-.desk-form-div .personal-details {
-    font-size: 21px;
+/* footer section  */
+
+footer {
+  background-color: #ffffff;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  bottom: 0;
 }
-.desk-form-div .tax-note {
-    font-size: 13px;
-    color: #fff;
+
+p{
+  margin-top: 1rem;
 }
-.desk-form-div .payment-message {
-    font-size: 15px;
-    color: #fff;
+
+.Prospect-form-heading{
+  line-height: 5rem;
 }
-.footer-section{
-    border-top: 1px solid #dddd;
-}
-.seva-head{
-    color: #fff;
-    font-size: 23px;
-    font-weight: 600;
-    margin: 0;
-}
-.seva-sub-head-title{
-    color: #fff;
-    font-size: 17px;
-    line-height: 1.4;
-    text-align: center;
-}
-.owl-dots{
-    display: none;
-}
-.owl-nav{
-    position: absolute;
-    top: 45%;
-    width: 100%;
-}
-.owl-prev{
-    left: -23px;
-    position: absolute!important;
-    color: black!important;
-    background: #d2d5d8!important;
-    width: 37px;
-    height: 37px;
-    border-radius: 21px!important;
-}
-.owl-next{
-    right: -23px;
-    position: absolute!important;
-    color: black!important;
-    background: #d2d5d8!important;
-    width: 37px;
-    height: 37px;
-    border-radius: 21px!important;
-}
-button:focus {
-    outline: 1px dotted;
-    outline: none;
-}
-.eightg
-{
-    display: none;
-}
-.seva-image
-{
-    width: 100%;
-    height: 100%;
-}
-.food-img,.food-img-info,.food-menu
-{
-    height: 100%;
-}
-.seva-para
-{
-    display: inline-block;
-    font-weight: 600;
-    font-size: 18px;
-    padding-left: 6px;
-}
-.role-checkbox {
-    width: 21px;
-    height: 21px;
-    accent-color: #2cf474;
-    vertical-align: middle;
-}
-.brd{
-    border-bottom: 2px solid #854f38;
-    border-bottom-style: dashed;
-}
-.seva-btn{
-    border-radius: 16px;
-    padding: 8px 13px;
-    color:#fae29c;
-    font-weight: 600;
-    display: block;
-    text-align: center;
-}
-.lbl{
-    cursor: pointer;
-    display: flex;
-    vertical-align: middle;
-    align-items: center;
-}   
-.otherInput {
-    display: none;
-}
-.clear-input {
-    cursor: pointer;
-    display: none;
-    position: absolute;
-    top: 8px;
-    right: 26px;
-    color: red;
-}
-.cus-input2 {
-    padding: 8px 8px 7px 10px!important;
-    height: 40px!important;
-    background: #f5e6bc !important;
-    color: #323232!important;
-    font-weight: 600;
-    border-bottom: none!important;
-}
-.cus-input2::placeholder {
-    color: #323232; /* Set your desired color */
-  }
-.sevaul{
-    list-style: none;
-    display: flex;
-}
-.videoFrame
-{
-    border-radius:25px;
-    height:300px;
-}
-.desc-ul
-{
-    padding: 0;
-    /* list-style: none; */
-}
-.desc-ul li{
-    padding-bottom: 15px;
-}
-.sv-para{
-    font-size: 12px;
-    font-weight: 600;
-}
-.sv-title{
-    font-weight: 600;
-    font-size: 25px;
-}
-.sp-cls{
-    font-size: 10px;
-}
-#donorPAN{
-    text-transform: uppercase;
-}
-#donorEmailId::placeholder{
-    text-transform: capitalize;
-}
-#donorEmailId{
-    text-transform: lowercase;
+
+.form-section-heading{
+  line-height: 4rem;
 }
