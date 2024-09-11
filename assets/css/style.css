@@ -33,7 +33,7 @@ main {
 
 /* header section   */
 .header-logo {
-  width: 100px;
+  width: 114px;
 }
 .btn-h-donate {
   background: #f6d25a;
@@ -94,6 +94,7 @@ main {
   background-color: #3e3b47;
   border-radius: 10px;
   font-size: 12px;
+  height: 2.15rem;
 }
 
 .form-input::placeholder {
@@ -140,4 +141,9 @@ p {
 
 input::-webkit-calendar-picker-indicator {
   color: rgba(250, 242, 242, 0);
+}
+
+
+.custom-select::after{
+  transform: translateY(-50%);
 }
