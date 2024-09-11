@@ -31,7 +31,7 @@ folkApp.controller("folkCtrl", function ($scope) {
   ];
 
   $scope.pageLoad = function () {
-    console.log($scope.user.name);
+    console.log($scope.familyDetails);
   };
 
   $scope.addWorkExperience = function () {
@@ -74,11 +74,18 @@ folkApp.controller("folkCtrl", function ($scope) {
   };
 
   $scope.submitForm = function () {
-    if ($scope.validateForm()) {
+    if ($scope.prospectForm.$invalid) {
+      // Focus on the first invalid field
+      angular.forEach($scope.prospectForm.$error.required, function (field) {
+        field.$setTouched();
+        document.getElementById(field.$name).focus();
+        return;
+      });
+    } else {
+      // Proceed with form submission
       alert("Form submitted successfully!");
     }
   };
-
   $scope.validateForm = function () {
     return true;
   };

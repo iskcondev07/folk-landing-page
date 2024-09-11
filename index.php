@@ -70,7 +70,7 @@
         <nav class="navbar navbar-expand-lg">
             <div class="header-element">
                 <div class="pt-2 pb-2">
-                    <img src="assets/img/ib-logo.png" class="header-logo" alt="header-logo">
+                    <img src="assets/img/folk-logo.png" class="header-logo" alt="header-logo">
                 </div>
                 <div class="my-auto">
                     <a href="#offer-seva" class="btn btn-h-donate">Registration</a>
@@ -144,7 +144,8 @@
                         <div class="col-xl-3">
                             <div class="form-group">
                                 <label for="yearOfPassOut">Year of Pass Out</label>
-                                <input type="number" class="form-control form-input" id="yearOfPassOut"
+                                <input type="text" class="form-control form-input" id="yearOfPassOut" minlength="4"
+                                    maxlength="4" oninput="this.value = this.value.replace(/\D/g, '').substring(0, 10);"
                                     ng-model="useryearOfPassOut" placeholder="Enter year of pass out" required
                                     min="1900" max="2099">
                             </div>
@@ -158,124 +159,21 @@
                         </div>
                     </div>
                 </div>
-                <!-- <div class="form-section my-3">
+
+                <div class="form-section my-3">
                     <div class="d-flex justify-content-between align-items-center">
                         <div>
                             <h3 class="form-section-heading">Family Information</h3>
                         </div>
-                        <div><button class="btn btn-add-elem btn-sm">Add</button></div>
+                        <div>
+                            <!-- Add button for adding new family details form section -->
+                            <button class="btn btn-add-elem btn-sm" ng-click="addFamilyDetail()">Add</button>
+                        </div>
                     </div>
 
-                    <div class="row">
-                        <div class="col-xl-3">
-                            <div class="form-group">
-                                <label for="relationship">Relationship</label>
-                                <input type="text" class="form-control form-input" id="relationship"
-                                    ng-model="familyrelationship" placeholder="Enter relationship" required>
-                            </div>
-                        </div>
-                        <div class="col-xl-3">
-                            <div class="form-group">
-                                <label for="familyName">Name</label>
-                                <input type="text" class="form-control form-input" id="familyName" ng-model="familyname"
-                                    placeholder="Enter family member's name" required>
-                            </div>
-                        </div>
-                        <div class="col-xl-3">
-                            <div class="form-group">
-                                <label for="age">Age</label>
-                                <input type="number" class="form-control form-input" id="age" ng-model="familyage"
-                                    placeholder="Enter age" required min="0">
-                            </div>
-                        </div>
-                        <div class="col-xl-3">
-                            <div class="form-group">
-                                <label for="familyMobile">Mobile Number</label>
-                                <input type="tel" class="form-control form-input" id="familyMobile"
-                                    ng-model="familymobile" placeholder="Enter mobile number" required
-                                    pattern="[0-9]{10}">
-                            </div>
-                        </div>
-                        <div class="col-xl-3">
-                            <div class="form-group">
-                                <label for="occupation">Occupation</label>
-                                <input type="text" class="form-control form-input" id="occupation"
-                                    ng-model="familyoccupation" placeholder="Enter occupation" required>
-                            </div>
-                        </div>
-                        <div class="col-xl-3">
-                            <div class="form-group">
-                                <label for="workPlace">Work Place</label>
-                                <input type="text" class="form-control form-input" id="workPlace"
-                                    ng-model="familyworkPlace" placeholder="Enter workplace" required>
-                            </div>
-                        </div>
-                        <div class="col-xl-3">
-                            <div class="form-group">
-                                <label for="income">Monthly Income</label>
-                                <input type="number" class="form-control form-input" id="income" ng-model="familyincome"
-                                    placeholder="Enter monthly income" required min="0">
-                            </div>
-                        </div>
-                        <div class="col-xl-3">
-                            <div class="form-group">
-                                <label for="saving">Saving</label>
-                                <input type="number" class="form-control form-input" id="saving" ng-model="familysaving"
-                                    placeholder="Enter saving amount" required min="0">
-                            </div>
-                        </div>
-                        <div class="col-xl-3">
-                            <div class="form-group">
-                                <label for="health">Health</label>
-                                <input type="text" class="form-control form-input" id="health" ng-model="familyhealth"
-                                    placeholder="Enter health details" required>
-                            </div>
-                        </div>
-                        <div class="col-xl-9">
-                            <div class="form-group">
-                                <label for="remarks">Remarks</label>
-                                <textarea class="form-control form-input" id="remarks" ng-model="familyremarks" rows="1"
-                                    placeholder="Enter remarks"></textarea>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="appendFamilyDetails"></div>
-
-                    <div class="form-group">
-                        <label for="kcPractice">Do parents know about your KC practice?</label>
-                    </div>
-                    <div class="d-flex">
-                        <div class="form-check mx-2">
-                            <input class="form-check-input" type="radio" name="kcPractice" id="kcPracticeYes"
-                                ng-model="familykcPractice" value="Yes" required>
-                            <label class="form-check-label" for="kcPracticeYes">Yes</label>
-                        </div>
-                        <div class="form-check mx-2">
-                            <input class="form-check-input" type="radio" name="kcPractice" id="kcPracticeNo"
-                                ng-model="familykcPractice" value="No">
-                            <label class="form-check-label" for="kcPracticeNo">No</label>
-                        </div>
-                    </div>
-                </div> -->
-                <div ng-repeat="family in familyDetails">
-                    <div class="form-section my-3">
-                        <div class="d-flex justify-content-between align-items-center">
-                            <div>
-                                <h3 class="form-section-heading">Family Information</h3>
-                            </div>
-                            <div>
-                                <!-- Add button for adding new family details form section -->
-                                <button class="btn btn-add-elem btn-sm" ng-click="addFamilyDetail()">Add</button>
-                                <!-- Delete button for each form section -->
-                                <button class="btn btn-danger btn-sm" ng-if="familyDetails.length > 1"
-                                    ng-click="removeFamilyDetail($index)">
-                                    Delete
-                                </button>
-                            </div>
-                        </div>
-
-                        <!-- Form fields for family details -->
-                        <div class="row">
+                    <!-- Form fields for family details -->
+                    <div ng-repeat="family in familyDetails">
+                        <div class="row mt-2">
                             <div class="col-xl-3">
                                 <div class="form-group">
                                     <label for="relationship">Relationship</label>
@@ -293,14 +191,18 @@
                             <div class="col-xl-3">
                                 <div class="form-group">
                                     <label for="age">Age</label>
-                                    <input type="number" class="form-control form-input" ng-model="family.age"
-                                        placeholder="Enter age" required min="0">
+                                    <input type="text" class="form-control form-input" ng-model="family.age"
+                                        minlength="3" maxlength="3"
+                                        oninput="this.value = this.value.replace(/\D/g, '').substring(0, 10);"
+                                        placeholder="Enter age" required>
                                 </div>
                             </div>
                             <div class="col-xl-3">
                                 <div class="form-group">
                                     <label for="familyMobile">Mobile Number</label>
                                     <input type="tel" class="form-control form-input" ng-model="family.mobile"
+                                        minlength="12" maxlength="12"
+                                        oninput="this.value = this.value.replace(/\D/g, '').substring(0, 10);"
                                         placeholder="Enter mobile number" required pattern="[0-9]{10}">
                                 </div>
                             </div>
@@ -321,15 +223,15 @@
                             <div class="col-xl-3">
                                 <div class="form-group">
                                     <label for="income">Monthly Income</label>
-                                    <input type="number" class="form-control form-input" ng-model="family.income"
-                                        placeholder="Enter monthly income" required min="0">
+                                    <input type="text" class="form-control form-input" ng-model="family.income"
+                                        placeholder="Enter monthly income" required>
                                 </div>
                             </div>
                             <div class="col-xl-3">
                                 <div class="form-group">
                                     <label for="saving">Saving</label>
-                                    <input type="number" class="form-control form-input" ng-model="family.saving"
-                                        placeholder="Enter saving amount" required min="0">
+                                    <input type="text" class="form-control form-input" ng-model="family.saving"
+                                        placeholder="Enter saving amount" required>
                                 </div>
                             </div>
                             <div class="col-xl-3">
@@ -347,8 +249,15 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="d-flex justify-content-end">
+                            <button class="btn btn-danger btn-sm" ng-if="familyDetails.length > 1"
+                                ng-click="removeFamilyDetail($index)">
+                                Delete
+                            </button>
+                        </div>
                     </div>
                 </div>
+
                 <div class="form-section my-3">
                     <div class="form-group">
                         <label for="kcPractice">Do parents know about your KC practice?</label>
@@ -366,80 +275,20 @@
                         </div>
                     </div>
                 </div>
-                <!-- <div class="form-section my-3">
+
+                <div class="form-section my-3">
                     <div class="d-flex justify-content-between align-items-center">
                         <div>
                             <h3 class="form-section-heading">Work Experience</h3>
                         </div>
-                        <div><button class="btn btn-add-elem btn-sm">Add</>
+                        <div>
+                            <!-- Add button for adding new form section -->
+                            <button class="btn btn-add-elem btn-sm" ng-click="addWorkExperience()">Add</button>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-xl-3">
-                            <div class="form-group">
-                                <label for="role">Role</label>
-                                <input type="text" class="form-control form-input" id="role" ng-model="workrole"
-                                    placeholder="Enter your role" required>
-                            </div>
-                        </div>
-                        <div class="col-xl-3">
-                            <div class="form-group">
-                                <label for="companyName">Company Name</label>
-                                <input type="text" class="form-control form-input" id="companyName"
-                                    ng-model="workcompanyName" placeholder="Enter company name" required>
-                            </div>
-                        </div>
-                        <div class="col-xl-3">
-                            <div class="form-group">
-                                <label for="experienceMonths">Experience - (Months)</label>
-                                <input type="number" class="form-control form-input" id="experienceMonths"
-                                    ng-model="workexperienceMonths" placeholder="Enter experience in months" required
-                                    min="0">
-                            </div>
-                        </div>
-                        <div class="col-xl-3">
-                            <div class="form-group">
-                                <label for="experienceYears">Experience - (Years)</label>
-                                <input type="number" class="form-control form-input" id="experienceYears"
-                                    ng-model="workexperienceYears" placeholder="Enter experience in years" required
-                                    min="0">
-                            </div>
-                        </div>
-                        <div class="col-xl-3">
-                            <div class="form-group">
-                                <label for="salary">Salary</label>
-                                <input type="number" class="form-control form-input" id="salary" ng-model="worksalary"
-                                    placeholder="Enter salary" required min="0">
-                            </div>
-                        </div>
-                        <div class="col-xl-9">
-                            <div class="form-group">
-                                <label for="workRemarks">Remark</label>
-                                <textarea class="form-control form-input" id="workRemarks" ng-model="workremark"
-                                    rows="1" placeholder="Enter remarks"></textarea>
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
 
-                <div ng-repeat="experience in workExperiences">
-                    <div class="form-section my-3">
-                        <div class="d-flex justify-content-between align-items-center">
-                            <div>
-                                <h3 class="form-section-heading">Work Experience</h3>
-                            </div>
-                            <div>
-                                <!-- Delete button for each form section -->
-                                <button class="btn btn-danger btn-sm" ng-if="workExperiences.length > 1"
-                                    ng-click="removeWorkExperience($index)">
-                                    Delete
-                                </button>
-                                <!-- Add button for adding new form section -->
-                                <button class="btn btn-add-elem btn-sm" ng-click="addWorkExperience()">Add</button>
-                            </div>
-                        </div>
-
-                        <!-- Form fields for work experience -->
+                    <!-- Form fields for work experience -->
+                    <div ng-repeat="experience in workExperiences">
                         <div class="row">
                             <div class="col-xl-3">
                                 <div class="form-group">
@@ -458,24 +307,26 @@
                             <div class="col-xl-3">
                                 <div class="form-group">
                                     <label for="experienceMonths">Experience - (Months)</label>
-                                    <input type="number" class="form-control form-input"
+                                    <input type="text" class="form-control form-input"
                                         ng-model="experience.experienceMonths" placeholder="Enter experience in months"
-                                        required min="0">
+                                        minlength="2" maxlength="2"
+                                        oninput="this.value = this.value.replace(/\D/g, '').substring(0, 10);" required>
                                 </div>
                             </div>
                             <div class="col-xl-3">
                                 <div class="form-group">
                                     <label for="experienceYears">Experience - (Years)</label>
-                                    <input type="number" class="form-control form-input"
+                                    <input type="text" class="form-control form-input" minlength="4" maxlength="4"
+                                        oninput="this.value = this.value.replace(/\D/g, '').substring(0, 10);"
                                         ng-model="experience.experienceYears" placeholder="Enter experience in years"
-                                        required min="0">
+                                        required>
                                 </div>
                             </div>
                             <div class="col-xl-3">
                                 <div class="form-group">
                                     <label for="salary">Salary</label>
-                                    <input type="number" class="form-control form-input" ng-model="experience.salary"
-                                        placeholder="Enter salary" required min="0">
+                                    <input type="text" class="form-control form-input" ng-model="experience.salary"
+                                        placeholder="Enter salary" required>
                                 </div>
                             </div>
                             <div class="col-xl-9">
@@ -485,6 +336,13 @@
                                         placeholder="Enter remarks"></textarea>
                                 </div>
                             </div>
+                        </div>
+                        <div class="d-flex justify-content-end">
+                            <!-- Delete button for each form section -->
+                            <button class="btn btn-danger btn-sm" ng-if="workExperiences.length > 1"
+                                ng-click="removeWorkExperience($index)">
+                                Delete
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -508,9 +366,8 @@
                         <div class="col-xl-6">
                             <div class="form-group">
                                 <label for="currentSalary">How much is your current salary?</label>
-                                <input type="number" class="form-control form-input" id="currentSalary"
-                                    ng-model="financecurrentSalary" placeholder="Enter your current salary" required
-                                    min="0">
+                                <input type="text" class="form-control form-input" id="currentSalary"
+                                    ng-model="financecurrentSalary" placeholder="Enter your current salary" required>
                             </div>
                         </div>
                         <div class="col-xl-12">
@@ -535,15 +392,27 @@
                         <div class="col-xl-3">
                             <div class="form-group">
                                 <label for="yearsInFolk">How many years</label>
-                                <input type="number" class="form-control form-input" id="yearsInFolk"
-                                    ng-model="journeyyearsInFolk" placeholder="Enter number of years" required min="0">
+                                <input type="text" class="form-control form-input" id="yearsInFolk" minlength="4"
+                                    maxlength="4" oninput="this.value = this.value.replace(/\D/g, '').substring(0, 10);"
+                                    ng-model="journeyyearsInFolk" placeholder="Enter number of years" required>
+                            </div>
+                        </div>
+                        <div class="col-xl-3">
+                            <div class="form-group">
+                                <label for="chantingRounds">Chanting Rounds</label>
+                                <input type="text" class="form-control form-input" id="chantingRounds" minlength="10"
+                                    maxlength="10"
+                                    oninput="this.value = this.value.replace(/\D/g, '').substring(0, 10);"
+                                    ng-model="journeychantingRounds" placeholder="Enter number of Chanting Rounds"
+                                    required>
                             </div>
                         </div>
                         <div class="col-xl-3">
                             <div class="form-group">
                                 <label for="yearsInKC">How many years</label>
-                                <input type="number" class="form-control form-input" id="yearsInKC"
-                                    ng-model="journeyyearsInKC" placeholder="Enter number of years" required min="0">
+                                <input type="text" class="form-control form-input" id="yearsInKC" minlength="4"
+                                    maxlength="4" oninput="this.value = this.value.replace(/\D/g, '').substring(0, 10);"
+                                    ng-model="journeyyearsInKC" placeholder="Enter number of years" required>
                             </div>
                         </div>
                         <div class="col-xl-3">
