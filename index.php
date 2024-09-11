@@ -80,7 +80,7 @@
     </header>
 
     <!-- Landing Page Content -->
-    <main>
+    <main class="main-container">
         <section class="container mt-5">
             <form name="prospectForm" novalidate>
                 <div class="text-center">
@@ -92,28 +92,28 @@
                         <div class="col-xl-3">
                             <div class="form-group">
                                 <label for="fullName">Full Name</label>
-                                <input type="text" class="form-control form-input" id="fullName" ng-model="user.name"
+                                <input type="text" class="form-control form-input" id="fullName" ng-model="username"
                                     placeholder="Enter your full name" required>
                             </div>
                         </div>
                         <div class="col-xl-3">
                             <div class="form-group">
                                 <label for="email">Email ID</label>
-                                <input type="email" class="form-control form-input" id="email" ng-model="user.email"
+                                <input type="email" class="form-control form-input" id="email" ng-model="useremail"
                                     placeholder="Enter your email" required>
                             </div>
                         </div>
                         <div class="col-xl-3">
                             <div class="form-group">
                                 <label for="mobile">Mobile Number</label>
-                                <input type="tel" class="form-control form-input" id="mobile" ng-model="user.mobile"
+                                <input type="tel" class="form-control form-input" id="mobile" ng-model="usermobile"
                                     placeholder="Enter your mobile number" required pattern="[0-9]{10}">
                             </div>
                         </div>
                         <div class="col-xl-3">
                             <div class="form-group">
                                 <label for="gender">Gender</label>
-                                <select class="form-control form-input" id="gender" ng-model="user.gender" required>
+                                <select class="form-control form-input" id="gender" ng-model="usergender" required>
                                     <option value="">Select Gender</option>
                                     <option value="Male">Male</option>
                                     <option value="Female">Female</option>
@@ -124,42 +124,41 @@
                         <div class="col-xl-3">
                             <div class="form-group">
                                 <label for="dob">Date of Birth</label>
-                                <input type="date" class="form-control form-input" id="dob" ng-model="user.dob"
-                                    required>
+                                <input type="date" class="form-control form-input" id="dob" ng-model="userdob" required>
                             </div>
                         </div>
                         <div class="col-xl-3">
                             <div class="form-group">
                                 <label for="language">Language</label>
-                                <input type="text" class="form-control form-input" id="language"
-                                    ng-model="user.language" placeholder="Enter preferred language" required>
+                                <input type="text" class="form-control form-input" id="language" ng-model="userlanguage"
+                                    placeholder="Enter preferred language" required>
                             </div>
                         </div>
                         <div class="col-xl-3">
                             <div class="form-group">
                                 <label for="education">Education</label>
                                 <input type="text" class="form-control form-input" id="education"
-                                    ng-model="user.education" placeholder="Enter your education" required>
+                                    ng-model="usereducation" placeholder="Enter your education" required>
                             </div>
                         </div>
                         <div class="col-xl-3">
                             <div class="form-group">
                                 <label for="yearOfPassOut">Year of Pass Out</label>
                                 <input type="number" class="form-control form-input" id="yearOfPassOut"
-                                    ng-model="user.yearOfPassOut" placeholder="Enter year of pass out" required
+                                    ng-model="useryearOfPassOut" placeholder="Enter year of pass out" required
                                     min="1900" max="2099">
                             </div>
                         </div>
                         <div class="col-xl-12">
                             <div class="form-group">
                                 <label for="remarks">Remark</label>
-                                <textarea class="form-control form-input" id="remarks" ng-model="user.remarks" rows="3"
+                                <textarea class="form-control form-input" id="remarks" ng-model="userremarks" rows="3"
                                     placeholder="Enter any remarks"></textarea>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="form-section my-3">
+                <!-- <div class="form-section my-3">
                     <div class="d-flex justify-content-between align-items-center">
                         <div>
                             <h3 class="form-section-heading">Family Information</h3>
@@ -172,20 +171,20 @@
                             <div class="form-group">
                                 <label for="relationship">Relationship</label>
                                 <input type="text" class="form-control form-input" id="relationship"
-                                    ng-model="family.relationship" placeholder="Enter relationship" required>
+                                    ng-model="familyrelationship" placeholder="Enter relationship" required>
                             </div>
                         </div>
                         <div class="col-xl-3">
                             <div class="form-group">
                                 <label for="familyName">Name</label>
-                                <input type="text" class="form-control form-input" id="familyName"
-                                    ng-model="family.name" placeholder="Enter family member's name" required>
+                                <input type="text" class="form-control form-input" id="familyName" ng-model="familyname"
+                                    placeholder="Enter family member's name" required>
                             </div>
                         </div>
                         <div class="col-xl-3">
                             <div class="form-group">
                                 <label for="age">Age</label>
-                                <input type="number" class="form-control form-input" id="age" ng-model="family.age"
+                                <input type="number" class="form-control form-input" id="age" ng-model="familyage"
                                     placeholder="Enter age" required min="0">
                             </div>
                         </div>
@@ -193,7 +192,7 @@
                             <div class="form-group">
                                 <label for="familyMobile">Mobile Number</label>
                                 <input type="tel" class="form-control form-input" id="familyMobile"
-                                    ng-model="family.mobile" placeholder="Enter mobile number" required
+                                    ng-model="familymobile" placeholder="Enter mobile number" required
                                     pattern="[0-9]{10}">
                             </div>
                         </div>
@@ -201,42 +200,42 @@
                             <div class="form-group">
                                 <label for="occupation">Occupation</label>
                                 <input type="text" class="form-control form-input" id="occupation"
-                                    ng-model="family.occupation" placeholder="Enter occupation" required>
+                                    ng-model="familyoccupation" placeholder="Enter occupation" required>
                             </div>
                         </div>
                         <div class="col-xl-3">
                             <div class="form-group">
                                 <label for="workPlace">Work Place</label>
                                 <input type="text" class="form-control form-input" id="workPlace"
-                                    ng-model="family.workPlace" placeholder="Enter workplace" required>
+                                    ng-model="familyworkPlace" placeholder="Enter workplace" required>
                             </div>
                         </div>
                         <div class="col-xl-3">
                             <div class="form-group">
                                 <label for="income">Monthly Income</label>
-                                <input type="number" class="form-control form-input" id="income"
-                                    ng-model="family.income" placeholder="Enter monthly income" required min="0">
+                                <input type="number" class="form-control form-input" id="income" ng-model="familyincome"
+                                    placeholder="Enter monthly income" required min="0">
                             </div>
                         </div>
                         <div class="col-xl-3">
                             <div class="form-group">
                                 <label for="saving">Saving</label>
-                                <input type="number" class="form-control form-input" id="saving"
-                                    ng-model="family.saving" placeholder="Enter saving amount" required min="0">
+                                <input type="number" class="form-control form-input" id="saving" ng-model="familysaving"
+                                    placeholder="Enter saving amount" required min="0">
                             </div>
                         </div>
                         <div class="col-xl-3">
                             <div class="form-group">
                                 <label for="health">Health</label>
-                                <input type="text" class="form-control form-input" id="health" ng-model="family.health"
+                                <input type="text" class="form-control form-input" id="health" ng-model="familyhealth"
                                     placeholder="Enter health details" required>
                             </div>
                         </div>
                         <div class="col-xl-9">
                             <div class="form-group">
                                 <label for="remarks">Remarks</label>
-                                <textarea class="form-control form-input" id="remarks" ng-model="family.remarks"
-                                    rows="1" placeholder="Enter remarks"></textarea>
+                                <textarea class="form-control form-input" id="remarks" ng-model="familyremarks" rows="1"
+                                    placeholder="Enter remarks"></textarea>
                             </div>
                         </div>
                     </div>
@@ -248,17 +247,126 @@
                     <div class="d-flex">
                         <div class="form-check mx-2">
                             <input class="form-check-input" type="radio" name="kcPractice" id="kcPracticeYes"
-                                ng-model="family.kcPractice" value="Yes" required>
+                                ng-model="familykcPractice" value="Yes" required>
                             <label class="form-check-label" for="kcPracticeYes">Yes</label>
                         </div>
                         <div class="form-check mx-2">
                             <input class="form-check-input" type="radio" name="kcPractice" id="kcPracticeNo"
+                                ng-model="familykcPractice" value="No">
+                            <label class="form-check-label" for="kcPracticeNo">No</label>
+                        </div>
+                    </div>
+                </div> -->
+                <div ng-repeat="family in familyDetails">
+                    <div class="form-section my-3">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div>
+                                <h3 class="form-section-heading">Family Information</h3>
+                            </div>
+                            <div>
+                                <!-- Add button for adding new family details form section -->
+                                <button class="btn btn-add-elem btn-sm" ng-click="addFamilyDetail()">Add</button>
+                                <!-- Delete button for each form section -->
+                                <button class="btn btn-danger btn-sm" ng-if="familyDetails.length > 1"
+                                    ng-click="removeFamilyDetail($index)">
+                                    Delete
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Form fields for family details -->
+                        <div class="row">
+                            <div class="col-xl-3">
+                                <div class="form-group">
+                                    <label for="relationship">Relationship</label>
+                                    <input type="text" class="form-control form-input" ng-model="family.relationship"
+                                        placeholder="Enter relationship" required>
+                                </div>
+                            </div>
+                            <div class="col-xl-3">
+                                <div class="form-group">
+                                    <label for="familyName">Name</label>
+                                    <input type="text" class="form-control form-input" ng-model="family.name"
+                                        placeholder="Enter family member's name" required>
+                                </div>
+                            </div>
+                            <div class="col-xl-3">
+                                <div class="form-group">
+                                    <label for="age">Age</label>
+                                    <input type="number" class="form-control form-input" ng-model="family.age"
+                                        placeholder="Enter age" required min="0">
+                                </div>
+                            </div>
+                            <div class="col-xl-3">
+                                <div class="form-group">
+                                    <label for="familyMobile">Mobile Number</label>
+                                    <input type="tel" class="form-control form-input" ng-model="family.mobile"
+                                        placeholder="Enter mobile number" required pattern="[0-9]{10}">
+                                </div>
+                            </div>
+                            <div class="col-xl-3">
+                                <div class="form-group">
+                                    <label for="occupation">Occupation</label>
+                                    <input type="text" class="form-control form-input" ng-model="family.occupation"
+                                        placeholder="Enter occupation" required>
+                                </div>
+                            </div>
+                            <div class="col-xl-3">
+                                <div class="form-group">
+                                    <label for="workPlace">Work Place</label>
+                                    <input type="text" class="form-control form-input" ng-model="family.workPlace"
+                                        placeholder="Enter workplace" required>
+                                </div>
+                            </div>
+                            <div class="col-xl-3">
+                                <div class="form-group">
+                                    <label for="income">Monthly Income</label>
+                                    <input type="number" class="form-control form-input" ng-model="family.income"
+                                        placeholder="Enter monthly income" required min="0">
+                                </div>
+                            </div>
+                            <div class="col-xl-3">
+                                <div class="form-group">
+                                    <label for="saving">Saving</label>
+                                    <input type="number" class="form-control form-input" ng-model="family.saving"
+                                        placeholder="Enter saving amount" required min="0">
+                                </div>
+                            </div>
+                            <div class="col-xl-3">
+                                <div class="form-group">
+                                    <label for="health">Health</label>
+                                    <input type="text" class="form-control form-input" ng-model="family.health"
+                                        placeholder="Enter health details" required>
+                                </div>
+                            </div>
+                            <div class="col-xl-9">
+                                <div class="form-group">
+                                    <label for="remarks">Remarks</label>
+                                    <textarea class="form-control form-input" ng-model="family.remarks" rows="1"
+                                        placeholder="Enter remarks"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-section my-3">
+                    <div class="form-group">
+                        <label for="kcPractice">Do parents know about your KC practice?</label>
+                    </div>
+                    <div class="d-flex">
+                        <div class="form-check mx-2">
+                            <input class="form-check-input" type="radio" name="kcPractice{{$index}}"
+                                ng-model="family.kcPractice" value="Yes" required>
+                            <label class="form-check-label" for="kcPracticeYes">Yes</label>
+                        </div>
+                        <div class="form-check mx-2">
+                            <input class="form-check-input" type="radio" name="kcPractice{{$index}}"
                                 ng-model="family.kcPractice" value="No">
                             <label class="form-check-label" for="kcPracticeNo">No</label>
                         </div>
                     </div>
                 </div>
-                <div class="form-section my-3">
+                <!-- <div class="form-section my-3">
                     <div class="d-flex justify-content-between align-items-center">
                         <div>
                             <h3 class="form-section-heading">Work Experience</h3>
@@ -270,7 +378,7 @@
                         <div class="col-xl-3">
                             <div class="form-group">
                                 <label for="role">Role</label>
-                                <input type="text" class="form-control form-input" id="role" ng-model="work.role"
+                                <input type="text" class="form-control form-input" id="role" ng-model="workrole"
                                     placeholder="Enter your role" required>
                             </div>
                         </div>
@@ -278,14 +386,14 @@
                             <div class="form-group">
                                 <label for="companyName">Company Name</label>
                                 <input type="text" class="form-control form-input" id="companyName"
-                                    ng-model="work.companyName" placeholder="Enter company name" required>
+                                    ng-model="workcompanyName" placeholder="Enter company name" required>
                             </div>
                         </div>
                         <div class="col-xl-3">
                             <div class="form-group">
                                 <label for="experienceMonths">Experience - (Months)</label>
                                 <input type="number" class="form-control form-input" id="experienceMonths"
-                                    ng-model="work.experienceMonths" placeholder="Enter experience in months" required
+                                    ng-model="workexperienceMonths" placeholder="Enter experience in months" required
                                     min="0">
                             </div>
                         </div>
@@ -293,22 +401,89 @@
                             <div class="form-group">
                                 <label for="experienceYears">Experience - (Years)</label>
                                 <input type="number" class="form-control form-input" id="experienceYears"
-                                    ng-model="work.experienceYears" placeholder="Enter experience in years" required
+                                    ng-model="workexperienceYears" placeholder="Enter experience in years" required
                                     min="0">
                             </div>
                         </div>
                         <div class="col-xl-3">
                             <div class="form-group">
                                 <label for="salary">Salary</label>
-                                <input type="number" class="form-control form-input" id="salary" ng-model="work.salary"
+                                <input type="number" class="form-control form-input" id="salary" ng-model="worksalary"
                                     placeholder="Enter salary" required min="0">
                             </div>
                         </div>
                         <div class="col-xl-9">
                             <div class="form-group">
                                 <label for="workRemarks">Remark</label>
-                                <textarea class="form-control form-input" id="workRemarks" ng-model="work.remark"
+                                <textarea class="form-control form-input" id="workRemarks" ng-model="workremark"
                                     rows="1" placeholder="Enter remarks"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+
+                <div ng-repeat="experience in workExperiences">
+                    <div class="form-section my-3">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div>
+                                <h3 class="form-section-heading">Work Experience</h3>
+                            </div>
+                            <div>
+                                <!-- Delete button for each form section -->
+                                <button class="btn btn-danger btn-sm" ng-if="workExperiences.length > 1"
+                                    ng-click="removeWorkExperience($index)">
+                                    Delete
+                                </button>
+                                <!-- Add button for adding new form section -->
+                                <button class="btn btn-add-elem btn-sm" ng-click="addWorkExperience()">Add</button>
+                            </div>
+                        </div>
+
+                        <!-- Form fields for work experience -->
+                        <div class="row">
+                            <div class="col-xl-3">
+                                <div class="form-group">
+                                    <label for="role">Role</label>
+                                    <input type="text" class="form-control form-input" ng-model="experience.role"
+                                        placeholder="Enter your role" required>
+                                </div>
+                            </div>
+                            <div class="col-xl-3">
+                                <div class="form-group">
+                                    <label for="companyName">Company Name</label>
+                                    <input type="text" class="form-control form-input" ng-model="experience.companyName"
+                                        placeholder="Enter company name" required>
+                                </div>
+                            </div>
+                            <div class="col-xl-3">
+                                <div class="form-group">
+                                    <label for="experienceMonths">Experience - (Months)</label>
+                                    <input type="number" class="form-control form-input"
+                                        ng-model="experience.experienceMonths" placeholder="Enter experience in months"
+                                        required min="0">
+                                </div>
+                            </div>
+                            <div class="col-xl-3">
+                                <div class="form-group">
+                                    <label for="experienceYears">Experience - (Years)</label>
+                                    <input type="number" class="form-control form-input"
+                                        ng-model="experience.experienceYears" placeholder="Enter experience in years"
+                                        required min="0">
+                                </div>
+                            </div>
+                            <div class="col-xl-3">
+                                <div class="form-group">
+                                    <label for="salary">Salary</label>
+                                    <input type="number" class="form-control form-input" ng-model="experience.salary"
+                                        placeholder="Enter salary" required min="0">
+                                </div>
+                            </div>
+                            <div class="col-xl-9">
+                                <div class="form-group">
+                                    <label for="workRemarks">Remark</label>
+                                    <textarea class="form-control form-input" ng-model="experience.remark" rows="1"
+                                        placeholder="Enter remarks"></textarea>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -320,28 +495,28 @@
                             <div class="form-group">
                                 <label for="houseInName">Do you have any house in your name?</label>
                                 <input type="text" class="form-control form-input" id="houseInName"
-                                    ng-model="finance.houseInName" placeholder="Yes/No" required>
+                                    ng-model="financehouseInName" placeholder="Yes/No" required>
                             </div>
                         </div>
                         <div class="col-xl-6">
                             <div class="form-group">
                                 <label for="loanInName">Do you have any loan in your name?</label>
                                 <input type="text" class="form-control form-input" id="loanInName"
-                                    ng-model="finance.loanInName" placeholder="Yes/No" required>
+                                    ng-model="financeloanInName" placeholder="Yes/No" required>
                             </div>
                         </div>
                         <div class="col-xl-6">
                             <div class="form-group">
                                 <label for="currentSalary">How much is your current salary?</label>
                                 <input type="number" class="form-control form-input" id="currentSalary"
-                                    ng-model="finance.currentSalary" placeholder="Enter your current salary" required
+                                    ng-model="financecurrentSalary" placeholder="Enter your current salary" required
                                     min="0">
                             </div>
                         </div>
                         <div class="col-xl-12">
                             <div class="form-group">
                                 <label for="financeRemark">Remark</label>
-                                <textarea class="form-control form-input" id="financeRemark" ng-model="finance.remark"
+                                <textarea class="form-control form-input" id="financeRemark" ng-model="financeremark"
                                     rows="3" placeholder="Enter any remarks"></textarea>
                             </div>
                         </div>
@@ -354,34 +529,34 @@
                             <div class="form-group">
                                 <label for="inTouchWith">In Touch With</label>
                                 <input type="text" class="form-control form-input" id="inTouchWith"
-                                    ng-model="journey.inTouchWith" placeholder="Enter name of contact" required>
+                                    ng-model="journeyinTouchWith" placeholder="Enter name of contact" required>
                             </div>
                         </div>
                         <div class="col-xl-3">
                             <div class="form-group">
                                 <label for="yearsInFolk">How many years</label>
                                 <input type="number" class="form-control form-input" id="yearsInFolk"
-                                    ng-model="journey.yearsInFolk" placeholder="Enter number of years" required min="0">
+                                    ng-model="journeyyearsInFolk" placeholder="Enter number of years" required min="0">
                             </div>
                         </div>
                         <div class="col-xl-3">
                             <div class="form-group">
                                 <label for="yearsInKC">How many years</label>
                                 <input type="number" class="form-control form-input" id="yearsInKC"
-                                    ng-model="journey.yearsInKC" placeholder="Enter number of years" required min="0">
+                                    ng-model="journeyyearsInKC" placeholder="Enter number of years" required min="0">
                             </div>
                         </div>
                         <div class="col-xl-3">
                             <div class="form-group">
                                 <label for="kcThrough">Came to KC through</label>
                                 <input type="text" class="form-control form-input" id="kcThrough"
-                                    ng-model="journey.kcThrough" placeholder="How did you come to KC?" required>
+                                    ng-model="journeykcThrough" placeholder="How did you come to KC?" required>
                             </div>
                         </div>
                         <div class="col-xl-9">
                             <div class="form-group">
                                 <label for="journeyRemark">Remark</label>
-                                <textarea class="form-control form-input" id="journeyRemark" ng-model="journey.remark"
+                                <textarea class="form-control form-input" id="journeyRemark" ng-model="journeyremark"
                                     rows="1" placeholder="Enter any remarks"></textarea>
                             </div>
                         </div>
@@ -394,7 +569,7 @@
                             <div class="form-group">
                                 <label for="turningPointRemark">Remark</label>
                                 <textarea class="form-control form-input" id="turningPointRemark"
-                                    ng-model="turningPoint.remark" rows="3"
+                                    ng-model="turningPointremark" rows="3"
                                     placeholder="Describe the turning point"></textarea>
                             </div>
                         </div>

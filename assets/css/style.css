@@ -18,6 +18,15 @@ body {
   background: linear-gradient(90deg, #171040, #121329, #10141a);
 }
 
+.main-container {
+  background-image: url("../img/background.png");
+  background-size: cover; /* Ensures the image covers the entire viewport */
+  background-repeat: repeat; /* Prevents the image from repeating */
+  background-position: center center; /* Centers the image */
+
+  margin: 0; /* Removes default margin */
+}
+
 main {
   flex: 1;
 }
@@ -59,7 +68,7 @@ main {
   margin-bottom: 30px;
   border: solid 1px #f6d25a;
 }
-.submit-form:hover{
+.submit-form:hover {
   border: solid 1px #f6d25a;
   color: #f6d25a;
   background-color: transparent;
@@ -125,7 +134,7 @@ p {
 
 .form-control:focus {
   background-color: #3e3b47;
-  border-color:none;
+  border-color: none;
   color: #d6d6d6;
 }
 
